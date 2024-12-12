@@ -1,0 +1,1431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="progetto_GiorgiaMigliorini.xsl"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <!--A-->
+
+<!--SEZIONE COMMENTI-->
+<!-- A.  TEI: elemento radice. Contiene la struttura fondamentale del documento -->
+<!-- B.  teiHeader: contiene un set di metadati descrittivi e informativi sulla risorsa digitale -->
+<!-- C.  fileDesc: contiene una descrizione completa delle informazione bibliografiche del file digitale.
+         Costituisce l'unico elemento obbligatorio del teiHeader -->
+<!-- C1. titleStmt: contiene le informazioni concernenti il titolo di un documento e chi ne è responsabile. 
+         È impiegato per le informazioni bibliografiche ed è uno dei tre elementi obbligatori dell'elemento fileDesc-->
+<!-- C1.1 title: elemento obbligatorio di titleStmt. Gli attrubuti opzionali inseriti sono type, per segnalare i diversi livelli 
+         del titolo e level (con valore journal) al fine di indicare che il titolo identifica una pubblicazione periodica e giornalistica-->
+<!-- C1.2. funder: specifica il nome di una persona, istituzione od organizzazione responsabile finanziariamente della creazione di un progetto -->
+<!--C1.3 sponsor: specifica il nome di una persone, istituzione od organizzazione responsabile del lavoro 
+         intellettuale necessario per la creazione di un progetto--> 
+<!-- C2. editionStmt: elemento opzionale, ma utile, di fileDesc. Fornisce informazioni sull'edizione di un testo-->
+<!-- C2.1 respStmt: fornisce informazioni sulle persone, istituzioni, organizzazioni responsabili dell'edizione specificata del testo -->
+<!-- C3.  extent: elemento opzionale di fileDesc, descrive la grandezza approssimativa del documento elettronico. In questo caso indica la lunghezza totale del Fascicolo 
+         d'interesse per la codifica -->
+<!-- C4. publicationStmt: elemento obbligatorio di fileDesc, fornisce informazioni su l'ente che ha reso dsponibile il documento e su eventuali licenze di permesso-->
+<!-- C4.1 publisher: persona o ente responsabile della pubblicazione o messa in circolazione del documento. Seguono il riferimento al luogo di appartenenza del publisher
+     e la tipologia di availability del documento-->
+<!--C5. seriesStmt: elemento opzionale di fileDesc. Raccoglie le informazioni relative alla serie alla quale la pubblicazione di interesse appartiene-->
+<!--C5.1  respStmt: in questo caso ho usato l'elemento per esplicitare i responsabili generali della serie a cui i testi d'interesse appartengono --> 
+<!--C6.sourceDesc: elemento obbligatorio di fileDesc. Contiene le informazioni relative alla fonte dalla quale il testo nel file deriva -->
+<!--C6.1  biblStruct: consente di fornire delle referenze bibliografiche strutturate. In seguito, analytic individua le porzioni (articoli, uscite bibliografiche...)
+          da cui derivano i testi oggetto della codifica. Monogr, invece, fa riferimento all'editoriale e al volume. -->
+<!--C7. encodingDesc: secondo elemento fondamentale del tei header. Contiene le informazioni relative alla relazione tra il documento originale e quello digitiale-->
+<!--C7.1 projectDesc: elemento utile a esplicitare le motivazioni alla base della creazione di un file o documento digitale. -->
+<!--C8. profileDesc: terzo elemento fondamentale del tei header. Fornisce dettagli non biografici, come aspetti linguistici, di composizione o di fruizione della risorsa-->
+<!--C8.1 abstract: elemento di profileDecs, utile a fornire un estratto significativo del testo e delle motivazioni che lo hanno creato. Ho impiegato abstract per 
+         esplicitare lo scopo della creazione sia del documento digitale, sia del periodico stesso. -->  
+<!--C8.2 textDesc: elemento di profileDesc, utile a descrivere aspetti non bibliografici di una risorsa testuale (pubblico di desinazione, canale di fruizione...)-->
+<!--C8.3 textClass: elemento di profileDesc. Raccoglie informazioni di classificazione di un testo (tema, parole chiave)-->
+<!--C10. text: elemento contenente oggetti testuali, i quali possono essere considerati come distinti o parti di un organismo unitario. Ogni elemento testuale 
+può essere composto da una sezione front, body e di trailer -->
+<!--C10.1 NOTA: ho ritenuto necessario esplicitare la divisione orginale degli articoli, intraprendendo una suddivisione più granulare del brano grazie 
+    agli elementi (front, body e back) di text-->
+<!--C10.2 lb: indicatore di riga-->
+<!--C10.3 In noteStmt sono state raggruppate le informazioni sulle persone o organizzazioni menzionate nei testi. Fanno eccezione le persone menzionate, le cui informazioni personali non sono state trovate o la cui identità rimane ignota.-->
+<!--C11 NOTA: i paragrafi sono stati identificati per pagina (numero) e colonna (sinistra e destra) -->
+<!--C11.1 NOTA: i div contengono sezioni di testo, sulla base della loro disposizione grafica. Si interrompono, infatti, al cambio di colonna o al cambio di pagina. 
+Nel caso in cui un paragrafo sia diviso tra due colonne nella stessa pagina o tra due colonne in due pagine diverse, il testo è stato unito all'interno del div che ne contiene l'inizio 
+esplicitando, pero, grazie ai tag ref e target la corretta disposizione grafica della sezione appartenente alla nuova colonna/pagina-->
+<!--C11.2 bloc è usato per segnalare la penisola balcanica, non solo come area geografica, bensì anche come contenitore di nazioni e, dunque, per evidenziarne la natura politica-->
+
+<!--B-->
+<teiHeader xml:lang="it">
+
+
+<!--C-->
+<fileDesc>
+<!-- C1 --> <titleStmt>
+ <!-- C1.1 --> <title type='main' level='j'>LA RASSEGNA SETTIMANALE</title>
+               <title type='sub' level='j'>DI POLITICA, SCIENZE, LETTERE ED ARTI</title>
+               <title type='sub' level='j'><abbr>Vol.</abbr><num type='cardinal'>2</num>
+                        <abbr> Num.</abbr><num type='cardinal'>4</num>
+                </title>
+     <!--C1.2-->  <funder>
+                   <persName xml:id='persName_SS'>Sidney Sonnino</persName> e 
+                   <persName xml:id='persName_LF'>Leopoldo Franchetti</persName> con il sostegno di
+                   <persName xml:id='persName_PV'>Pasquale Villari</persName>
+                 </funder>
+    <!--C1.3-->  <sponsor>
+                    <persName xml:id='persName_ss'>Sidney Sonnino</persName> e 
+                    <persName xml:id='persName_lf'>Leopoldo Franchetti</persName>
+                 </sponsor>
+            </titleStmt>
+
+<!--C2-->   <editionStmt>
+              <edition>Edizione digitale a carattere didattico -  
+              <date when="12-2024"> Dicembre 2024 </date>
+              </edition>
+<!--C2.1-->   <respStmt>
+                <resp>Responsabile di codifica -</resp><name xml:id='name_GM'> Giorgia Migliorini</name>
+              </respStmt>
+              <respStmt>
+                <resp>Referente universitario di coordinazione -</resp><name xml:id='name_AMDG'> Angelo Mario Del Grosso</name>
+              </respStmt>
+          </editionStmt> 
+<!-- C3 --> <extent>
+              <measure unit="pages" quantity="16">53-68</measure>
+           </extent>
+<!-- C4 --> <publicationStmt>
+    <!--C4.1--> <publisher>Università di Pisa</publisher>
+                <pubPlace>Pisa</pubPlace>
+                <availability status='free'><p>Documento con disponibilità di accesso libero</p></availability>
+            </publicationStmt>
+<!--C5--> <seriesStmt>
+                <title>La rassegna settimanale di politica, scienze, lettere ed arti</title>
+ <!--C5.1-->    <respStmt>
+                    <resp>Fondatore del progetto editoriale</resp>
+                    <persName xml:id='persName_Ss'>Sidney Sonnino</persName>
+                </respStmt> 
+                <respStmt> 
+                    <resp>Fondatore del progetto editoriale</resp>
+                    <persName xml:id='persName_Lf'>Leopoldo Franchetti</persName>
+                     
+               </respStmt>
+                <biblScope unit='volume'>2</biblScope>
+                <biblScope unit='issue'>4</biblScope>
+          </seriesStmt>
+
+ <!-- NOTE -->
+ <notesStmt>
+    <noteGrp>
+        <!--C10.3-->
+        <note xml:id="persone">
+            <!--Menzionati nel brano: IL PARASSITISMO LETTERARIO-->
+            <persName xml:id="ET" ref="https://www.treccani.it/enciclopedia/emilio-treves_(Dizionario-Biografico)/">Emilio Treves</persName>
+            <!--Menzionati nel brano di BIBLIOGRAFIA: LETTERATURA E STORIA-->
+            <persName xml:id="AM" ref="https://www.treccani.it/enciclopedia/achille-mauri_(Dizionario-Biografico)/">Achille Mauri</persName>
+            <persName xml:id="FLM" ref="https://www.treccani.it/enciclopedia/felice-le-monnier/">Felice Le Monnier</persName>
+            <persName xml:id="FL" ref="https://www.treccani.it/enciclopedia/francesco-londonio_(Dizionario-Biografico)/">Francesco Londonio</persName>
+            <persName xml:id="LCF" ref="https://www.treccani.it/enciclopedia/luigi-carlo-farini/">Luigi Carlo Farini</persName>
+            <persName xml:id="NIII" ref="https://www.treccani.it/enciclopedia/napoleone-iii_(Enciclopedia-dei-ragazzi)/">Napoleone III</persName>
+            <persName xml:id="GT" ref="https://www.treccani.it/enciclopedia/giuseppe-torelli_res-ef64839d-8bb7-11dc-8e9d-0016357eee51_(Enciclopedia-Italiana)/">Giuseppe Torelli</persName>
+            <persName xml:id="LT" ref="https://www.treccani.it/enciclopedia/luigi-torelli/">Luigi Torelli</persName>
+            <persName xml:id="GV" ref="https://www.treccani.it/enciclopedia/giovanni-ventura_(Dizionario-Biografico)/">Giovanni Ventura</persName>
+            <persName xml:id="GTorti" ref="https://www.treccani.it/enciclopedia/giovanni-torti/">Giovanni Torti</persName>
+            <persName xml:id="LM" ref="https://www.treccani.it/enciclopedia/ludovico-melzi_(Dizionario-Biografico)/">Lodovico Melzi</persName>
+            <persName xml:id="FrancA" ref="https://www.treccani.it/enciclopedia/francesco-ambrosoli_(Enciclopedia-Italiana)/">Francesco Ambrosoli</persName>
+            <persName xml:id="FilipA" ref="https://www.treccani.it/enciclopedia/filippo-ambrosoli_(Dizionario-Biografico)/">Filippo Ambrosoli</persName>
+            <persName xml:id="GR" ref="https://www.treccani.it/enciclopedia/giuseppe-robecchi_(Dizionario-Biografico)/">Giuseppe Robecchi</persName>
+            <persName xml:id="LDA" ref="https://www.treccani.it/enciclopedia/des-ambrois-de-nevache-luigi-francesco_(Dizionario-Biografico)/">Luigi Des Ambrois</persName>
+            <persName xml:id="AT" ref="https://www.treccani.it/enciclopedia/augustin-theiner_(Dizionario-Biografico)/">Agostino Theiner</persName>
+            <persName xml:id="MC" ref="https://www.treccani.it/enciclopedia/michelangelo-castelli/">Michelangelo Castelli</persName>
+            <persName xml:id="DA" ref="https://www.treccani.it/enciclopedia/dante-alighieri_(Dizionario-Biografico)/">Dante Alighieri</persName>
+            <persName xml:id="ADL" ref="https://www.treccani.it/enciclopedia/alphonse-marie-louis-prat-de-lamartine/">Alphonse de Lamartine</persName>
+            <persName xml:id="FDR" ref="https://www.treccani.it/enciclopedia/francesca-da-rimini_(Enciclopedia-Dantesca)/">Francesca da Rimini</persName>
+            <persName xml:id="PM" ref="https://it.wikipedia.org/wiki/Paolo_Malatesta#:~:text=Paolo%20Malatesta%2C%20detto%20il%20Bello,prima%20moglie%20Concordia%20dei%20Pandolfini.">Paolo Malatesta</persName>
+            <persName xml:id="L" ref="https://it.wikipedia.org/wiki/Lancillotto">Lancillotto</persName>
+            <persName xml:id="GB" ref="https://www.treccani.it/enciclopedia/giovanni-boccaccio/">Giovanni Boccaccio</persName>
+            <persName xml:id="A" ref="https://it.wikipedia.org/wiki/Re_Artù">Artù</persName>
+            <persName xml:id="LP" ref="https://www.treccani.it/enciclopedia/luigi-pulci/">Luigi Pulci</persName>
+            <persName xml:id="MMB" ref="https://www.treccani.it/enciclopedia/matteo-maria-boiardo/">Matteo Maria Boiardo</persName>
+            <persName xml:id="TT" ref="https://www.treccani.it/enciclopedia/torquato-tasso/">Torquato Tasso</persName>
+            <persName xml:id="BL" ref="https://www.treccani.it/enciclopedia/brunetto-latini_(Dizionario-Biografico)/">Brunetto Latini</persName>
+            <persName xml:id="MCa" ref="https://www.treccani.it/enciclopedia/martino-canal_(Dizionario-Biografico)/">Martino Canal</persName>
+            <persName xml:id="FP" ref="https://www.treccani.it/enciclopedia/francesco-petrarca/">Francesco Petrarca</persName>
+            <persName xml:id="JDM" ref="https://www.treccani.it/enciclopedia/jean-de-mandeville_(Enciclopedia-Italiana)/">Jean de Mandeville</persName>
+            <persName xml:id="FLe" ref="https://www.treccani.it/enciclopedia/francois-lenormant_(Enciclopedia-Italiana)/">François Lenormant</persName>
+            <persName xml:id="JE" ref="https://www.treccani.it/enciclopedia/joseph-hilar-eckhel_(Enciclopedia-Italiana)/">Joseph Hilar Eckhel</persName>
+            <persName xml:id="TM" ref="https://www.treccani.it/enciclopedia/theodor-mommsen/">Theodor Mommsen</persName>
+            <persName xml:id="CGB" ref="https://www.treccani.it/enciclopedia/christian-august-brandis_(Enciclopedia-Italiana)/">Christian August Brandis</persName>
+            <!--Menzionati in NOTIZIE: seconda uscita-->
+            <persName xml:id="AV" ref="https://www.treccani.it/enciclopedia/alessandro-volta/">Alessandro Volta</persName>
+
+        </note>
+        <note xml:id="organizzazioni">
+            <!--Menzionati nel brano: IL PARASSITISMO LETTERARIO-->
+            <listOrg>
+                <org xml:id="Ill_Ita">
+                  <orgName ref="https://it.wikipedia.org/wiki/L%27Illustrazione_Italiana">Illustrazione Italiana</orgName>
+                </org>
+                <org xml:id="RdI">
+                    <orgName ref="https://it.wikipedia.org/wiki/Regno_d%27Italia_(1861-1946)">Regno d&#8217;Italia</orgName>
+                </org>
+            <!--Menzionati nel brano di BIBLIOGRAFIA: LETTERATURA E STORIA-->
+                <org xml:id="SLM">
+                    <orgName ref="https://www.treccani.it/enciclopedia/le-monnier/">Successori Le Monnier</orgName>
+                </org>
+                
+            </listOrg>
+        </note>
+
+    <!--ANNOTAZIONI VARIE-->
+    <noteGrp xml:id="varie">
+        <note xml:id="note1" resp="Giorgia Migliorini" type="gloss">Espressione: ad ogni piè. Spiegazione: A ogni passo | continuamente | ripetutamente</note>
+        <note xml:id="note2" resp="Giorgia Migliorini" type="gloss">Espressione: non inducas in tentationem. Traduzione: non abbandonarci alla tentazione</note>        
+        <note xml:id="note3" resp="Giorgia Migliorini" type="annotation">Il pronome 'si' è impiegato in funzione di un soggetto indefinito 'noi' </note>
+        <note xml:id="note4" resp="Giorgia Migliorini" type="annotation">Il pronome 'si' è impiegato con funzione impersonale</note>
+        <note xml:id="note5" resp="Giorgia Migliorini" type="annotation">Il pronome 'si' è impiegato con funzione pleonastica</note>
+        <note xml:id="note6" resp="Giorgia Migliorini" type="gloss">Espressione: del pari. Spiegazione: ugualmente</note>
+        <note xml:id="note7" resp="Giorgia Migliorini" type="gloss">Espressione: testé. Spiegazione: poco fa</note>
+        <note xml:id="note8" resp="Giorgia Migliorini" type="annotation">'tutto questo' si riferisce alle coordinate delle righe 23-26</note>
+        <note xml:id="note9" resp="Giorgia Migliorini" type="gloss">Espressione: amministrazione della cosa pubblica. Spiegazione: pubblica aministrazione|gestione dei beni pubblici</note>
+        <note xml:id="note10" resp="Giorgia Migliorini" type="gloss">Espressione: onde. Spiegazione: da cui|da dove</note>
+        <note xml:id="note11" resp="Giorgia Migliorini" type="gloss">Espressione: guisa. Spiegazione: forma | maniera | modo</note>
+        <note xml:id="note12" resp="Giorgia Migliorini" type="annotation">il verbo 'emanare' è impiegato col significato di 'formare|creare|originare'</note>
+        <note xml:id="note13" resp="Giorgia Migliorini" type="gloss">Espressione: siansi. Spiegazione: siano</note>
+        <note xml:id="note14" resp="Giorgia Migliorini" type="annotation">'lui' fa riferimento al 'Governo', qui personificato</note>
+        <note xml:id="note15" resp="Giorgia Migliorini" type="gloss">Espressione: concione. Spiegazione: arringa pubblica</note>
+        <note xml:id="note16" resp="Giorgia Migliorini" type="gloss">Espressione: china. Spiegazione: pendio|superficie in pendenza</note>
+        <note xml:id="note17" resp="Giorgia Migliorini" type="certainity"><mentioned>piazza</mentioned> fa riferimento al pubblico, al popolo, richiamando il concetto di piazza come luogo di organizzazione, dibattito e contestazione</note>
+        <note xml:id="note18" resp="Giorgia Migliorini" type="gloss">Espressione: a man salva. Spiegazione: senza impedimenti</note>
+        <note xml:id="note19" resp="Giorgia Migliorini" type="gloss">Espressione: sic vos non vobis. Traduzione: così voi non per voi</note>
+        <note xml:id="note20" resp="Giorgia Migliorini" type="gloss">Spiegazione: in onta. Espressione: malgrado | nonostante</note>
+        <note xml:id="note21" resp="Giorgia Migliorini" type="gloss">Espressione: bell&#8217;e. Spiegazione: indica conclusione di un&#8217;azione</note>
+        <note xml:id="note22" resp="Giorgia Migliorini" type="gloss">Espressione: Raccolta. Spiegazione: Il termine fa riferimento alla pubblicazione della casa editrice Successori Le Monnier</note>
+        <note xml:id="note23" resp="Giorgia Migliorini" type="gloss">Espressione: adunque. Spiegazione: variante letteraria di dunque</note>
+        <note xml:id="note24" resp="Giorgia Migliorini" type="certainity">La referenza bibliografica fa riferimento all&#8217;opera sopracitata del <persName><surname>Mauri</surname></persName></note>
+        <note xml:id="note25" resp="Giorgia Migliorini" type="gloss">Spiegazione: sopravegliare. Espressione: soprintendere | prestare attenzione</note>
+        <note xml:id="note26" resp="Giorgia Migliorini" type="annotation">L&#8217;impresa fa riferimento al tentativo di annessione delle <region><geogName>Marche</geogName></region> e dell&#8217;<region><geogName>Umbria</geogName></region> al <country type="historical">Regno unito d&#8217;Italia</country>, in construzione</note>
+        <note xml:id="note27" resp="Giorgia Migliorini" type="gloss">Espressione: rizzare. Spiegazione: qui usato col significato di alzare | elevare | diventare</note>
+        <note xml:id="note28" resp="Giorgia Migliorini" type="gloss">Espressione: alla spicciolata. Spiegazione: a un gruppo di pochi</note>
+        <note xml:id="note29" resp="Giorgia Migliorini" type="annotation">Personaggio inventato per la narrazione</note>
+        <note xml:id="note30" resp="Giorgia Migliorini" type="gloss">L&#8217;espressione fa riferimento a un gruppo di lavori, centrali per la tradizione letteraria medievale, che ruotano attorno alla 
+            leggenda di Artù e alle storie sui suoi cavalieri</note>
+        <note xml:id="note31" resp="Giorgia Migliorini" type="bibliography">
+            <mentioned xml:lang="fr">Olinde et Sopbronie</mentioned> fa riferimento all&#8217;episodio conosciuto col titolo di
+            <bibl>
+                <biblScope>
+                    <soCalled>
+                     <title>
+                        Olindo e Sofronia
+                     </title>
+                   </soCalled>
+                    <unit type="canto">
+                        canto <num type="roman">II</num>,
+                    </unit>
+                    <unit type="pages">
+                        pagine <num>14</num>-<num>53</num>.
+                    </unit>
+                </biblScope>
+                Dall&#8217;opera di 
+                <author><persName ref="TT">Torquato Tasso</persName></author>
+                <title ref="https://it.wikipedia.org/wiki/Gerusalemme_liberata"><settlement type="city"> Gerusalemme</settlement>liberata</title>
+            </bibl>              
+        </note>
+        <note xml:id="note32" resp="Giorgia Migliorini"  type="certainity"><certainty locus="value"><desc>È probabile che <mentioned>sic</mentioned> sia impiegato dall&#8217;autore o dall&#8217;editore del testo
+        per segnalare la trasposizione errata, ma esatta in termini di trascrizione, del cognome Canale.</desc></certainty></note>
+        <note xml:id="note33" resp="Giorgia Migliorini" type="certainty"><certainty locus="name"><desc><mentioned>Prolegomeni</mentioned> è utilizzato non nel suo significato lessicale, bensì probabilmente
+        in riferimento all&#8217;opera omonima di Immanuel Kant</desc></certainty></note>
+        <note xml:id="note34" resp="Giorgia Migliorini" type="gloss">Espressione: siasi studiato di. Spiegazione: si sia impegnato | sforzato di</note>
+        <note xml:id="note35" resp="Giorgia Migliorini" >Nota dell&#8217;editore</note>
+        </noteGrp>
+    </noteGrp>
+</notesStmt>
+
+
+
+ <!--C6--> <sourceDesc>
+  <!--C6.1--> <biblStruct>
+               <!--primo articolo-->
+               <analytic>
+                    <title level="a" type="main">LE VACANZE DEL PARLAMENTO E LA POLITICA INTERNA.</title>
+                     
+               </analytic>
+               <!--secondo articolo-->
+               <analytic><title level="a" type="main">PARASSITISMO LETTERARIO</title></analytic>
+               <!--bibliografia-->
+               <analytic><title level="a" type="main">BIBLIOGRAFIA</title>
+                         <title level="a" type="sub">LETTERATURA E STORIA</title>
+                         <title level="a" type="sub">LIBRI PEI FANCIULLI</title>
+               </analytic>
+               <!--notizie-->
+               <analytic><title level="a" type="main">NOTIZIE</title></analytic>
+               <monogr>
+                    <title level="j" type="main">La rassegna settimanale</title>
+                    <title level="j" type="sub"> di politica, scienze, lettere ed arti</title>
+                    <imprint>
+                         <pubPlace>Roma</pubPlace>
+                         <publisher>Casa Editrice Barbèra</publisher>
+                         <date when="1878">1878</date>
+                     </imprint>
+                     <biblScope unit="volume">2</biblScope>
+                     <biblScope unit="issue">4</biblScope>
+                     <biblScope unit="date" from="1878-07-28">28 Luglio 1878</biblScope>
+                     <biblScope unit="pag" from="53" to="68">53-68</biblScope>
+                     <biblScope unit="place">Firenze</biblScope>   
+                     
+               </monogr>
+               <note type="annotation">L&#8217;identità degli autori non è specificata. <quote>«Pochissimi erano gli articoli firmati»</quote> dice in merito
+               <persName>Giustina Manica</persName>, aggiungendo che la rivista si avvicinava infatti più alla natura di un foglio di programma politico.</note>
+             </biblStruct>
+           </sourceDesc>
+</fileDesc>
+
+<!--C7: ENCODING-->
+<encodingDesc>
+     <!--C7.1-->
+     <projectDesc>
+          <p>La creazione del documento digitale è funzionale alla codifica di quattro testi tratti dalla 'Rivista Settimanale'. I segmenti testuali di interesse corrispondono a due articoli, due trafiletti bibliografici e due dalla sezioni 'Notizie'.</p>
+          <p>I titoli sono rispettivamente:</p>
+          <p><title level="a" type="main" ref="#vacanzeParlamento">LE VACANZE DEL PARLAMENTO E LA POLITICA INTERNA</title></p> 
+           <p><title level="a" type="main" ref="#parassLetterario">PARASSITISMO LETTERARIO</title></p> 
+           <p><title level="a" type="main" ref="#lettEstoria">LETTERATURA E STORIA</title></p> 
+            <p><title level="a" type="main" ref="#libriFanc">LIBRI PEI FANCIULLI</title></p> 
+           <p><title level="a" type="main" ref="#notizie">NOTIZIE</title> 
+          </p>        
+     </projectDesc>
+     <editorialDecl>
+        <punctuation marks="some">
+            <p>I segni di punteggiatura di natura particolare o ambigua sono stati codificati tramite il loro punto di codice corrispondente: i.e. puntini di
+                sospensione, apostrofi, trattini lunghi, parentesi tonde. Per ciò che concerne i segni convenzionali di punteggiatura: la codifica ha 
+                esplicitato i punti di full stop tramite elemento <gi>s</gi> e i quotation marks tramite apposito tag <gi>quote</gi>.</p>
+        </punctuation>
+        <correction>
+            <p>La codifica ha esplicitato errori ortografici, di accentuazione e di punteggiatura, grazie a tag come <gi>sic</gi> e <gi>corr</gi>.
+            Sono state anche mostrate alternative di codifica, grazie al tag <gi>choice</gi>, nei casi di termini o espressioni arcaici, dialettali o in disuso.</p>
+           </correction>
+     </editorialDecl>
+</encodingDesc>
+
+<!--C8: PROFILE DESC-->
+<profileDesc>
+<!--C8.1-->  
+   <abstract> 
+       <p>
+          Il documento contiene la codifica di alcune sezioni testuali di vario genere
+          dalla 'Rivista Settimanale', fondata nel 1878 per aprire un campo nel quale possano
+          essere discusse e studiate le questioni principali di ordine politico e sociale
+          che interessavano l&#8217;Italia.
+       </p>
+  </abstract>
+  <langUsage>
+     <language ident="it">Italiano</language>
+  </langUsage>
+  <!--C8.2-->
+  <textDesc n="Journal">
+     <channel mode="w">rivista</channel>
+     <constitution type="single"></constitution>
+     <derivation type="original"></derivation>
+     <domain type="public"></domain>
+     <factuality type="fact"></factuality>
+     <interaction passive="world"></interaction>
+     <preparedness type="prepared"></preparedness>
+     <purpose type="inform" degree="high"></purpose>
+  </textDesc>
+  <!--C8.3-->
+  <textClass>
+     <keywords>
+          <term>politica</term>
+          <term>economia</term>
+          <term>scienza</term>
+          <term>letteratura</term>
+          <term>arte</term>
+          <term>cultura</term>
+          <term>Italia</term>
+          <term>Italia meridionale</term>
+     </keywords>
+  </textClass>
+</profileDesc>
+</teiHeader>
+
+<!--FACSIMILE-->
+<facsimile>
+    <surface xml:id="pagina53">
+        <!--surface - articolo 1-->
+        <graphic url='le_vacanze_del_parlamento.png' width='1170px' height='1731px'/>
+        <zone ulx="42" uly="226" lrx="557" lry="264" corresp="tit_primobrano"/>
+        <zone ulx="42" uly="267" lrx="555" lry="287" corresp="subtit_primobrano"/>
+        <zone ulx="44" uly="294" lrx="551" lry="592" corresp="paragrafo1_brano1"/>
+        <zone ulx="45" uly="599" lrx="552" lry="948" corresp="paragrafo2_brano1"/>
+        <zone ulx="45" uly="950" lrx="552" lry="1411" corresp="paragrafo3_brano1"/>
+        <zone ulx="44" uly="1416" lrx="547" lry="1570" corresp="paragrafo4_brano1"/>
+        <zone ulx="569" uly="242" lrx="1075" lry="410" corresp="paragrafo4_brano1"/>
+        <zone ulx="570" uly="421" lrx="1080" lry="612" corresp="paragrafo5_brano1"/>
+        <zone ulx="570" uly="616" lrx="1078" lry="810" corresp="paragrafo6_brano1"/>
+        <zone ulx="571" uly="815" lrx="1077" lry="1119" corresp="paragrafo7_brano1"/>
+        <zone ulx="569" uly="1125" lrx="1078" lry="1317" corresp="paragrafo8_brano1" />
+        <zone ulx="568" uly="1320" lrx="1077" lry="1440" corresp="paragrafo9_brano1"/>
+        <zone ulx="567" uly="1447" lrx="1077" lry="1541" corresp="paragrafo10_brano1"/>
+    </surface>
+    <surface xml:id="pagina64">
+        <!--surface - articolo 2-->
+        <graphic url='parassitismo_letterario__bibl1.png' width='1089px' height='1568px' />
+        <zone ulx="72" uly="1309" lrx="556" lry="1341" corresp="tit_secondobrano"/>
+        <zone ulx="72" uly="1342" lrx="554" lry="1487" corresp="paragrafo1_brano2"/>
+        <zone ulx="558" uly="97" lrx="1046" lry="239" corresp="paragrafo2_brano2"/>
+        <zone ulx="561" uly="241" lrx="1051" lry="549" corresp="paragrafo3_brano2"/> 
+        <zone ulx="562" uly="552" lrx="1051" lry="798" corresp="paragrafo4_brano2"/>
+        <!--inizio surface - bibliografia-->
+        <zone ulx="561" uly="807" lrx="1045" lry="841" corresp="tit_bibl1"/>
+        <zone ulx="563" uly="843" lrx="1045" lry="867" corresp="subtit_bibl1"/>
+        <zone ulx="564" uly="869" lrx="1056" lry="908" corresp="paragrafo1_brano3"/>
+        <zone ulx="566" uly="911" lrx="1056" lry="1233" corresp="paragrafo2_brano3"/>
+        <zone ulx="566" uly="1238" lrx="1056" lry="1485" corresp="paragrafo3_brano3"/>
+    </surface>
+    <surface xml:id="pagina65">
+        <!--continuo surface - bibliografia-->
+        <graphic url='bibl1_letteratura_e_storia.png' width='1121px' height='1639px' />
+        <zone ulx="48" uly="88" lrx="567" lry="316" corresp="paragrafo3_brano3"/>
+        <zone ulx="48" uly="319" lrx="566" lry="933" corresp="paragrafo4_brano3"/>
+        <zone ulx="49" uly="937" lrx="568" lry="1061" corresp="paragrafo5_brano3"/>
+        <zone ulx="50" uly="1064" lrx="566" lry="1286" corresp="paragrafo6_brano3"/>
+        <zone ulx="50" uly="1288" lrx="567" lry="1348" corresp="paragrafo7_brano3"/>
+        <zone ulx="50" uly="1351" lrx="566" lry="1578" corresp="paragrafo8_brano3"/>
+        <zone ulx="577" uly="90" lrx="1089" lry="568" corresp="paragrafo8_brano3"/>
+        <zone ulx="577" uly="572" lrx="1089" lry="660" corresp="paragrafo9_brano3"/>
+        <zone ulx="577" uly="663" lrx="1088" lry="756" corresp="paragrafo10_brano3"/>
+        <zone ulx="579" uly="760" lrx="1089" lry="1393" corresp="paragrafo11_brano3"/>
+        <zone ulx="576" uly="1398" lrx="1091" lry="1577" corresp="paragrafo12_brano3" />
+    </surface>
+    <surface xml:id="pagina66">
+        <!--fine surface - bibliografia 2-->
+        <graphic url='bibl1_letteratura_e_storia2.png' width='1111px' height='1593px' />
+        <zone ulx="61" uly="98" lrx="560" lry="959" corresp="paragrafo12_brano3"/>
+    </surface>
+    <surface xml:id="pagina68">
+        <!--continuo surface - bibliografia 2-->
+        <graphic url='bibl2_libri_pei_fanciulli__notizie.png' width='1100px' height='1580px' />
+        <zone ulx="77" uly="254" lrx="580" lry="279" corresp="subtit_bibl2"/>
+        <zone ulx="77" uly="283" lrx="579" lry="319" corresp="paragrafo1_brano4"/>
+        <zone ulx="78" uly="321" lrx="581" lry="442" corresp="paragrafo2_brano4"/>
+        <zone ulx="78" uly="446" lrx="580" lry="484" corresp="paragrafo3_brano4"/>
+        <zone ulx="78" uly="486" lrx="581" lry="651" corresp="paragrafo4_brano4"/>
+        <zone ulx="78" uly="654" lrx="579" lry="899" corresp="paragrafo5_brano4"/>
+        <zone ulx="77" uly="901" lrx="580" lry="1004" corresp="paragrafo6_brano4"/>
+        <zone ulx="78" uly="1006" lrx="579" lry="1084" corresp="paragrafo7_brano4"/>
+        <zone ulx="77" uly="1087" lrx="581" lry="1152" corresp="paragrafo8_brano4"/>
+    </surface>
+
+    <surface xml:id="pagina68_1">
+    <!--NOTIZIE-->
+      <graphic url='bibl2_libri_pei_fanciulli__notizie.png' width='1100px' height='1580px' />
+       <zone ulx="287" uly="1169" lrx="391" lry="1195" corresp="tit_not"/>
+       <zone ulx="112" uly="1201" lrx="572" lry="1242" corresp="primauscita"/>
+       <zone ulx="96" uly="1251" lrx="571" lry="1330" corresp="secondauscita"/>
+    </surface>
+
+
+</facsimile>
+
+<!--TESTI--> 
+<!--C10-->
+<text xml:lang="it">
+     <group>
+
+     <!--PRIMO ARTICOLO-->
+         <text xml:id="le_vacanze_del_parlamento_e_la_politica_interna">
+          <!--FRONT-->     
+          <!--C10.1-->
+             <front>
+                 <div type="main" xml:id="tit_primobrano">
+                     <head rend="align(center) case(allcaps)">
+                         <!--C10.2-->
+                         <lb n="1"/>LE VACANZE DEL PARLAMENTO
+                     </head>
+                 </div>
+                 <div type="subtitle" xml:id="subtit_primobrano">
+                     <head rend="align(center) case(allcaps)">
+                         <lb n="2"/>E LA POLITICA INTERNA.
+                     </head> 
+                 </div>
+             </front>  
+        
+          <!--BODY-->
+          <body>
+          <div type='page'>
+        
+               <!--C11-->
+               <div type="section" xml:id="primobrano_pg1_colSX">
+                <!--C11.1-->
+                   <p xml:id="paragrafo1_brano1" rend="first-line-indent justify">
+                    <s>
+                       <lb n="3"/>L&#8217;<country type="nation">Italia</country> sta facendo da alcuni mesi lo sperimento di un
+                       <lb n="4"/>indirizzo di <orgName type="role"><sic>governo</sic> <corr>Governo</corr></orgName> a cui forse converrebbe il nome di
+                       <lb n="5"/>politica contemplativa ed ascetica.
+                    </s>
+                    <s> 
+                        Pauroso di essere colto
+                       <lb n="6"/>in peccato dagli amici suoi, il <orgName type="role" ana="metonimia">Ministero</orgName> si trova alle prese
+                       <lb n="7"/>ad ogni <choice><orig>piè</orig><expan>piede</expan></choice> sospinto con un caso di coscienza; ripete a <sic>sè</sic> <corr>sé</corr>
+                       <ref ana="note1"/>                                  
+                       <lb n="8"/>stesso da <choice><orig>mane</orig><expan>mattina</expan></choice> a sera il <foreign xml:lang="la" rend="italic">non inducas in tentationem</foreign>; ad ogni
+                       <ref ana="note2"/> 
+                       <lb n="9"/>questione che gli si venga affacciando, mette il maggiore
+                       <lb n="10"/>impegno nello eliminare l&#8217;iniziativa propria e il proprio
+                       <lb n="11"/>volere.
+                    </s>
+                    <s>
+                        Si direbbe che i nostri uomini di <orgName type="role">Stato</orgName> abbiano il
+                        <ref ana="note3"/>
+                       <lb n="12"/>proponimento di ringiovanire la formula prediletta <choice><orig>da&#8217;</orig><expan>dai</expan></choice> vec­-
+                       <lb n="13" break="no"/>chi dottrinari, <quote rend="italic" ana="s3">il miglior governo è quello che governa meno</quote>;
+                       <lb n="14"/>e si crederebbe del pari che la politica ministeriale di que­-
+                       <ref ana="note3"/> 
+                       <ref ana="note6"/>  
+                       <lb n="15" break="no"/>sti giorni collochi il suo ideale più elevato nell&#8217;abdicazione
+                       <lb n="16"/>di ogni responsabilità.
+                    </s>
+                   </p>
+                <p xml:id="paragrafo2_brano1" rend="first-line-indent justify">
+                    <s>
+                    <lb n="17"/>Di questo programma negativo offrono la prova più
+                    <lb n="18"/>evidente le inchieste di cui il <orgName type="role" ana="metonimia">Ministero</orgName> fece proposta nella
+                    <lb n="19"/>sessione parlamentare <sic>testé</sic> <corr>testè</corr> prorogata.
+                   </s>
+                    <ref ana="note7"/> 
+                    <s>
+                    Così per le domande
+                    <lb n="20"/>di aiuti che furon rivolte al <orgName type="role">Governo</orgName> dalla città di <settlement type="city">Firenze</settlement>,
+                    <lb n="21"/>come per l&#8217;assetto futuro del servizio ferroviario, l&#8217;azione
+                    <lb n="22"/>governativa non ebbe altra cura <sic>ed</sic> <corr>e</corr> altra meta che quella
+                    <lb n="23"/>di eliminare <sic>sè</sic> <corr>sé</corr> stessa.
+                    </s>
+                    <s>
+                    Studiare da <sic>sè</sic> <corr>sé</corr> il <orgName type="role political">partito</orgName> migliore,
+                    <lb n="24"/>investigare i fatti da cui hanno origine questi difficili pro­-
+                    <lb n="25" break="no"/>blemi, ideare e proporre una soluzione, non rifuggire dalle
+                    <lb n="26"/>lotte e dai pericoli di una politica coraggiosa e risoluta,
+                    <lb n="27"/>tutto questo parve ardimento eccessivo o ingerenza esube­-
+                    <ref ana="note8"/>
+                    <lb n="28" break="no"/>rante per un&#8217;amministrazione liberale.
+                    </s>
+                    <s>
+                     E per poco
+                    <lb n="29"/>non si credette di compiere un atto di patriottismo inaugurando
+                    <ref ana="note3"/>
+                    <lb n="30"/>un sistema che esautora il potere esecutivo e introduce
+                    <lb n="31"/>nell&#8217;amministrazione della cosa pubblica uno spostamento
+                    <ref ana="note9"/>                
+                    <lb n="32"/>di responsabilità, non utile, anzi veramente pernicioso.
+                   </s>
+                </p>
+                <p xml:id="paragrafo3_brano1" rend="first-line-indent justify">
+                    <s>
+                    <lb n="33"/>Di questo sistema non <choice><orig>è</orig> <reg>c&#8217;è</reg></choice> chi non veda la fallacia <sic>ed</sic><corr> e</corr>
+                    <lb n="34"/>il danno.
+                    </s>
+                    <s>
+                    Ognuno comprende che sotto queste apparenze
+                    <lb n="35"/>di ossequio illimitato al <orgName type="role"><sic>parlamento,</sic> <corr>Parlamento,</corr></orgName> si nasconde una in­-
+                    <lb n="36" break="no"/>decisione di propositi che non può all&#8217;ultimo non pertur­-
+                    <lb n="37" break="no"/>bare lo spirito pubblico; che l&#8217;opera moderatrice e gli uf­-
+                    <lb n="37" break="no"/>fici del <orgName type="role">Governo</orgName> sono in tal modo fraintesi o soppressi;
+                    <lb n="38"/>che il maggiore <choice><orig>de&#8217;</orig> <expan>dei</expan></choice> pericoli onde possa essere minacciato
+                    <ref ana="note10"/> 
+                    <lb n="39"/>un paese che si governa a regime parlamentare, la tirannia
+                    <ref ana="note4"/>
+                    <lb n="40"/>delle maggioranze, si va disegnando in tal <distinct>guisa</distinct> con indizi
+                    <ref ana="note11"/>              
+                    <lb n="41"/>sempre più manifesti.
+                    </s>
+                    <s>
+                    Non è più il <orgName type="role">Governo</orgName> che deve tem­-
+                    <lb n="42" break="no"/>perare <sic>ed</sic> <corr>e</corr> indirizzare il <orgName type="role political">partito</orgName> da cui esso emana; ma è
+                    <ref ana="note12"/>
+                    <lb n="43"/>l&#8217;azione di una parte politica, o di coloro che si fanno
+                    <lb n="44"/>innanzi in suo nome, l&#8217;azione necessariamente tumultuaria,
+                    <lb n="45"/>incomposta, non frenata da coscienza di responsabilità,
+                    <lb n="46"/>che prevale sul <orgName type="role">Governo</orgName>, lo fa oscillante o lo trascina a
+                    <lb n="47"/>seconda <choice><orig>de&#8217;</orig> <expan>dei</expan></choice> casi, e sempre gli toglie continuità ed efficacia.
+                    </s>
+                    <s>
+                    <lb n="48"/>I provvidi equilibri si rompono; le forme così legittima-
+                    <lb n="49" break="no"/>mente apprezzate se s&#8217;interpretano a dovere, si convertono
+                    <ref ana="note4"/>
+                    <lb n="50"/>in una <distinct>guarentigia</distinct> <reg>garanzia</reg> bugiarda, e valgono soltanto a nascon­-
+                    <lb n="51" break="no"/>dere la fossa in cui le libertà pubbliche e i buoni ordini
+                    <lb n="52"/>di <orgName type="role"><sic>governo</sic> <corr>Governo</corr></orgName> finiscono per precipitare.
+                   </s>
+                </p>
+                <p xml:id="paragrafo4_brano1" rend="first-line-indent justify">
+                    <s>
+                        <lb n="53"/>Fatte silenziose ora le aule parlamentari, questo indi­-
+                        <lb n="54" break="no"/>rizzo alimenta nuove e più intense trepidanze nell&#8217;animo
+                        <lb n="55"/>di coloro che guardano più in là dell&#8217;ora presente.
+                    </s>
+                    <s> 
+                        È cer-
+                        <lb n="56" break="no"/>tamente deplorabile che le sorti di <settlement type="city">Firenze</settlement> <distinct>siansi</distinct> ancor
+                        <ref ana="note13"/>
+                     
+                        <ref ana="note5"/>
+                        <lb n="57"/>più abbuiate per le dubbiezze del <orgName type="role">Ministero</orgName> e la sua man­-
+                        <lb n="58" break="no"/>canza di energia nel risolvere la questione in un modo o
+                        <lb n="59"/>in un altro.
+                    </s>
+                    <s> 
+                        È doloroso ricordo la discussione pregiudicata
+                       <ref target="#primobrano_pg1_colDX"> <lb n="60"/>della legge ferroviaria.</ref>
+                    </s>
+                    <ref target="primobrano_pg1_colDX">
+                        <s> Ma ben più pericolose per il paese
+                        <lb n="61"/>appariscono le agitazioni che serpeggiano adesso in tutta
+                        <lb n="62"/>l&#8217;<country type="nation">Italia</country>, e sembrano rinfocolarsi <choice><orig>pel</orig> <reg>per il</reg></choice> programma di com­- 
+                        <lb n="63" break="no"/>piacente astensione o per l&#8217;indifferentismo con cui il <orgName type="role">Go-     
+                        <lb n="64" break="no"/>verno</orgName>verno accenna ad accoglierle.
+                       </s>
+                        <s>
+                             E non sapremmo abbastanza
+                        <lb n="65"/>dolerci che il <orgName type="role labor">sindacato</orgName> rappresentativo, il quale per noi ha
+                        <lb n="66"/>valore di una <distinct>guarentigia</distinct> <reg>garanzia</reg> preziosa, abbia a rimanere in
+                        <lb n="67"/>questo momento sospeso.
+                       </s>
+                    </ref>              
+                   </p>
+               </div>
+               <div type="section" xml:id="primobrano_pg1_colDX">
+                <p xml:id="paragrafo5_brano1" rend="first-line-indent justify">
+                    <s>
+                        <lb n="68"/>Queste commozioni a cui assistiamo, queste manifesta­-
+                        <lb n="69" break="no"/>zioni, legittime in <sic>sè</sic> <corr>sé</corr> e ispirate bensì a simpatie patriotti­-
+                        <lb n="70" break="no"/>che, ma non misurate <sic>nè</sic> <corr>né</corr> opportune, dicono troppo chiara­-
+                        <lb n="71" break="no"/>mente che gli stessi amici del <orgName type="role political">Governo</orgName> ripongono in lui una
+                        <ref ana="note14"/>
+                        <lb n="71"/>fiducia molto limitata e sentono il bisogno di forzargli la
+                        <lb n="72"/>mano.
+                    </s>
+                    <s> Si vede bene che la breve esperienza ha maturato i
+                    <ref ana="note4"/>
+                        <lb n="73"/>suoi frutti; e a <orgName type="political"><orig>Camera</orig> <expan>Camera dei Deputati</expan></orgName> chiusa, i <orgName type="political">Comizi</orgName> popolari si credono
+                        <lb n="74"/>legittimati a formulare un nuovo programma di politica
+                        <lb n="75"/>estera senza darsi pensiero della sua esecuzione.
+                    </s>
+                </p>
+                <p xml:id="paragrafo6_brano1" rend="first-line-indent justify">
+                    <s>
+                        <lb n="76"/>Il <orgName type="role political">Governo</orgName> si è mostrato non curante delle sue prero­-
+                        <lb n="77" break="no"/>gative di fronte al <orgName type="role political">Parlamento</orgName>, ha mostrato di non avere
+                        <lb n="78"/>idee proprie, o almeno di non aver il coraggio della re­-
+                        <lb n="79" break="no"/>sponsabilità di metterle <sic>ad</sic> <corr>a</corr> esecuzione, tanto all&#8217;interno
+                        <lb n="80"/>quanto all&#8217;estero; ha ripetuto riguardo alla maggioranza, il
+                        <lb n="81"/>famoso detto:<quote><said>« Sono il loro capo<gap reason="spazio extra"/> ; dunque debbo seguirli<sic>.</sic> » <corr>.</corr></said></quote>
+                    </s>
+                     <s>
+                        <lb n="82"/>La sua autorità, il suo prestigio ne hanno sofferto, ed è
+                        <lb n="83"/>naturale che la <placeName type="public_space">piazza</placeName> tenti e speri di dirigere la politica
+                        <ref ana="note26"/>
+                        <lb n="84"/>del paese con schiamazzi e concioni e proteste.
+                        <ref ana="note15"/>
+                    </s> 
+                </p>
+                <p xml:id="paragrafo7_brano1" rend="first-line-indent justify">
+                   <s>
+                    <lb n="85"/>Ma la <distinct>china</distinct> è pericolosa; e <distinct>sovra</distinct> <reg>sopra</reg> di essa potrebbero
+                    <ref ana="note16"/>
+                    <lb n="86"/>sdrucciolare le <orgName type="role">istituzioni</orgName> e la stessa salvezza del paese.
+                   </s>
+                   <s> 
+                    Noi
+                    <lb n="87"/>abbiamo rimproverato al <orgName type="role political">Ministero</orgName> di non aver sostenuto
+                    <lb n="88"/>più dignitosamente <choice><orig>gl&#8217;</orig> <expan>gli</expan></choice> interessi dell&#8217;<country type="nation">Italia</country> al <orgName type="role political">Congresso</orgName>,
+                    <lb n="89"/>combattendo con energia i privilegi accordati all&#8217;<country type="nation">Austria</country>
+                    <lb n="90"/>sull&#8217;<geogName type="sea">Adriatico</geogName>, a danno del <country type="nation">Montenegro</country>, e appoggiando i
+                    <lb n="91"/>diritti dei <persName>Greci</persName>, e delle altre popolazioni della <geogName><bloc><geogFeat>penisola</geogFeat> bal­-
+                    <lb n="92" break="no"/>canica.</bloc></geogName> <!--C11.3-->
+                   </s>
+                   <s> 
+                    <sic>Nè</sic> <corr>Né</corr> l&#8217;<country type="nation">Italia</country> doveva, di fronte <choice><orig>agl&#8217;</orig> <expan>agli </expan></choice>ingrandimenti del­-
+                    <lb n="93" break="no"/>l&#8217;<country type="nation">Austria</country>, tacere affatto dei diritti dei suoi figli ancora op­-
+                    <lb n="94" break="no"/>pressi dallo straniero, ratificando col suo silenzio la loro
+                    <lb n="95"/>servitù.
+                   </s>
+                    <s> 
+                    Meglio era non intervenire al <orgName type="role political">Congresso</orgName>, che far 
+                    <lb n="96"/>la parte che ci abbiamo fatto.
+                    </s>
+                    <s> 
+                    Ma non per questo potremmo
+                    <lb n="97"/>ammettere che <choice><orig>d&#8217;</orig> <expan>da</expan></choice>ora in poi la politica estera dell&#8217;<country type="nation">Italia</country> debba 
+                    <lb n="98"/>essere determinata dai <foreign xml:lang="EN" rend="italic">meetings</foreign> e dai tumulti della <placeName type="public_space">piazza</placeName>.
+                    <ref ana="note17"/>
+                   </s> 
+                </p>
+                <p xml:id="paragrafo8_brano1" rend="first-line-indent justify">
+                    <s>
+                        <lb n="99"/>Mentre alcuni <orgName type="role media">giornali</orgName> ufficiosi dichiarano che il <orgName type="role political">Go-
+                        <lb n="100" break="no"/>verno</orgName> <distinct>riprova</distinct> <reg>disapprova</reg> altamente ogni agitazione che possa turbare
+                        <lb n="101"/>la cordialità delle nostre relazioni con le altre <orgName type="role political">potenze</orgName>,
+                        <lb n="102"/>altri si compiacciono riportare notizie di missioni speciali
+                        <lb n="103"/>a <placeName><settlement type="city">Tunisi</settlement></placeName>, di trattati con la <country type="nation">Grecia</country> <choice><abbr>ec.</abbr> <expan>eccetera</expan></choice>, per lusingare il
+                        <lb n="104"/>pubblico con vane speranze che, dietro alla politica estera
+                        <lb n="105"/>conosciuta del <orgName type="role political">Gabinetto</orgName>, ve ne sia un&#8217;altra più avventurosa,
+                        <lb n="106"/>la quale possa procurare all&#8217;<country type="nation">Italia</country> ingrandimenti in altre di­-
+                        <lb n="107"/>rezioni che non quella delle <geogFeat>province</geogFeat> soggette allo straniero.
+                    </s>
+                </p>
+                <p xml:id="paragrafo9_brano1" rend="first-line-indent justify">
+                    <s> <lb n="108"/>Tutto ciò sembrerebbe fanciullesco, se <sic>pur troppo</sic> <corr>purtroppo</corr> non
+                        <lb n="109"/>alimentasse nel paese le agitazioni intempestive che ora
+                        <lb n="110"/>deploriamo, e le quali non servono che a rendere difficili
+                        <lb n="111"/>le nostre relazioni internazionali, senza riparare in alcun
+                        <lb n="112"/>modo agli sbagli che il <orgName type="role political">Ministero</orgName> possa aver commesso nel
+                        <lb n="113"/><orgName type="role political">Congresso</orgName> o fuori.
+                    </s>
+                </p>
+                <p xml:id="paragrafo10_brano1" rend="first-line-indent justify">
+                    <s>
+                        <lb n="114"/><sic>Ed</sic> <corr>E</corr> ora urge che il <orgName type="role political">Governo</orgName> manifesti apertamente e re-
+                        <lb n="114" break="no"/>cisamente <sic>qual&#8217;</sic> <corr>qual</corr> è la sua politica nel prossimo avvenire, e dove
+                        <lb n="115"/>intende condurci, e dichiari senza reticenze che un indirizzo
+                        <lb n="116"/>diverso non sarebbe conforme <choice><orig>agl&#8217;</orig> <expan>agli</expan></choice>interessi della <term type="national_concept">patria</term>.
+                    </s>             
+                </p>
+               </div>
+            </div>
+            </body>
+        </text>
+
+        <!--SECONDO ARTICOLO-->
+            <text xml:id="il_parassitismo_letterario">
+            <!--FRONT-->     
+            <!--C10.1-->
+               <front>
+                  <div type="main" xml:id="tit_secondobrano">
+                    <head rend="align(center) case(allcaps)">
+                        <lb n="117"/>IL PARASSITISMO LETTERARIO
+                    </head>
+                 </div>
+               </front>  
+               <body>
+               <div type="page">
+                <div type="section" xml:id="secondobrano_pg1_colSX">
+                    <p xml:id="paragrafo1_brano2" rend="first-line-indent justify">
+                        <s>
+                            <lb n="115"/>     
+                                L&#8217;<roleName type="professional">editore</roleName>
+                                <addName type="epithet">
+                                <abbr>sig.</abbr>
+                                <expan>signor</expan>
+                                </addName>
+                                <persName ref="#ET">
+                                <forename>Emilio</forename>
+                                <surname>Treves</surname>
+                            </persName> 
+                            ci manda una lettera a
+                            <lb n="116"/>stampa nella quale, a proposito di una sua vertenza con
+                            <lb n="117"/>un <orgName type="media">giornale <term type="geographic_region">napoletano</term></orgName> che ha riprodotto arbitrariamente
+                            <lb n="118"/>alcuni articoli <choice><orig>dell&#8217;</orig> <expan>della</expan></choice><orgName type="newspaper" ref="#Ill_Ita">Illustrazione italiana</orgName>, si lamenta di que-­
+                            <lb n="119" break="no"/>sto parassitismo della contraffazione, che continua a <term type="saying">man
+                            <lb n="120"/>salva</term> nell&#8217;interno del <choice><orig><orgName type="government" ref="#RI">Regno</orgName></orig> <expan><orgName type="government" ref="#RI"> d&#8217;Italia</orgName></expan></choice>, e spesso col favore dei <orgName type="role juridical">tribunali</orgName>
+                            <ref ana="note18"/>
+                            <lb n="121"/>indulgenti.
+                        </s>
+                        <s>
+                            L&#8217;<roleName type="professional">editore</roleName> <term type="geographic_region" xml:id="milanese">milanese</term> conforta le sue asserzioni con
+                            <lb n="122"/>
+                            <ref target="#secondobrano_pg1_colDX">tristissimi esempi anche prossimi, ai quali per nostro conto
+                            <lb n="123"/>potremmo aggiungerne altri che illustrano i noti versi <quote><foreign xml:lang="la" rend="italic">sic
+                            <lb n="124"/>vos non vobis</foreign></quote>.
+                            <ref ana="note19"/>
+                            </ref>
+                        </s>
+                        <ref target="#secondobrano_pg1_colDX">
+                            <s> E dopo aver notato che la riproduzione fatta
+                            <lb n="125"/>in <distinct>onta</distinct> alle espresse dichiarazioni di proprietà letteraria
+                            <ref ana="note20"/>
+                            <lb n="126"/>riservata, è una contraffazione in piena regola, egli invoca
+                            <lb n="127"/>il giudizio della <orgName type="categoria">stampa</orgName>, come ha già invocato quello dei
+                            <lb n="128"/><orgName type="role juridical">tribunali</orgName>.</s>
+                        </ref>
+                    </p>
+                </div>  
+                <div type="section" xml:id="secondobrano_pg1_colDX">
+                    <p xml:id="paragrafo2_brano2" rend="first-line-indent justify">
+                        <s>
+                        <lb n="129"/>Questo reato della contraffazione, contro il quale la nostra
+                        <lb n="130"/>legge difettosissima non sa tutelare <choice><orig>gl&#8217;</orig> <expan>gli</expan></choice>interessati, mentre
+                        <lb n="131"/>la <orgName type="role juridical">magistratura</orgName> mostrasi sempre singolarmente tenera per
+                        <lb n="132"/>i contravventori, è un male grandissimo che, come nota il
+                        <lb n="134"/><addName type="epithet">signor</addName><persName ref="#ET"><surname> Treves</surname></persName>, colpisce tutta la vita letteraria del paese.
+                       </s>
+                       <s>
+                        <lb n="135"/><quote>« Con questo pericolo permanente, come può un editore
+                        <lb n="136"/>pagare lautamente un autore? Come può un <orgName type="role media">giornale</orgName> o una
+                        <lb n="137"/><orgName type="role media">rivista</orgName> stipendiare degli autori che richiamino il pubblico, 
+                        <lb n="138"/>se altri riproducono gli articoli medesimi senza tirar fuori
+                        <lb n="139"/>un soldo? Per l&#8217;autore non c&#8217;è salvezza: o è mediocre, e   
+                        <lb n="140"/>guadagna poco; o è insigne, e sarà derubato<sic>.</sic> » <corr>.</corr>
+                        </quote>
+                       </s>
+                       <s>
+                        Bisogne-
+                        <lb n="141" break="no"/>rebbe pertanto che i magistrati, se è possibile, ponessero
+                        <lb n="142"/>mente a questo lato della questione e liberassero l&#8217;<country type="nation">Italia</country>
+                        <lb n="143"/><quote>« da questo parassitismo che nuoce a tutta la pianta let­-
+                        <lb n="144" break="no"/>teraria. »</quote>
+                       </s>                  
+                    </p>
+                    <p xml:id="paragrafo3_brano2" rend="first-line-indent justify">
+                        <s>
+                            <lb n="145"/>Ma, oltre alla questione giuridica, c&#8217;è pure una que­-
+                            <lb n="146" break="no"/>stione di rispettabilità fra giornalisti e editori; perciò lo
+                            <lb n="147"/>scrittore della lettera fa appello alla <orgName type="categoria">stampa</orgName>, e spera che
+                            <lb n="148"/>l&#8217;<orgName type="association" rend="italic">Associazione della stampa</orgName> e la <orgName type="association" rend="italic">Società degli uomini di let­-
+                            <lb n="149" break="no"/>tere</orgName> che sta per sorgere a <settlement type="city">Milano</settlement>, cerchino provvedere a
+                            <lb n="150"/>siffatto inconveniente.
+                        </s>
+                        <s> E noi consentiamo pienamente con
+                            <lb n="151"/>lui.
+                        </s> 
+                        <s> Intanto per cominciare a tenere un po&#8217; più alto il pre­-
+                            <lb n="152" break="no"/>stigio della letteratura e del giornalismo, non sarebbe male
+                            <lb n="153"/>che gli stessi editori, che ora giustamente si lamentano,
+                            <lb n="154"/>tralasciassero il poco rispettoso costume di mandare ai
+                            <lb n="155"/><orgName type="role media">giornale</orgName> <choice><orig>belle e</orig> <reg>bell&#8217;e</reg></choice> fatte, anzi <choice><orig>belle e</orig><reg>bell&#8217;e</reg></choice> stampate, le rassegne
+                           <ref ana="note21"/>
+                           <lb n="156"/>bibliografiche di opere uscite dai loro torchi.
+                        </s>
+                   </p>
+                </div>
+                </div>
+              </body>
+            </text>
+            <text xml:id="Bibliografia">
+                <!--FRONT-->     
+                <!--C10.1-->
+                <front>
+                    <div type="main" xml:id="tit_bibl1">
+                        <head rend="align(center) case(allcaps)">
+                            
+                            <lb n="157"/>BIBLIOGRAFIA.
+                        </head>
+                    </div>
+                </front> 
+                <group>
+                    <!--PRIMA USCITA - SEZIONE BIBLIOGRAFIA-->
+                    <text xml:id="letteratura_e_storia">
+                        <front>
+                            <div type="subtitle" xml:id="subtit_bibl1">
+                                <head rend="align(center) case(allcaps)">
+                                    <lb n="158"/>LETTERATURA E STORIA.
+                                </head> 
+                            </div>
+                        </front>
+                        <body>
+                        <div type="page">
+                            <div type="section" xml:id="terzobrano_pg1_colDX">
+                                <p xml:id="paragrafo1_brano3" rend="justify">
+                                    <bibl xml:id="SB">
+                                        <lb n="159"/><author><persName ref="#AM"><forename>Achille</forename> <surname>Mauri</surname></persName></author>.
+                                        <title type="full"><title type="main" level="m" rend="italic">Scritti Biografici</title>, <title type="sub">Due Volumi</title>.</title>
+                                        &#x2014; <pubPlace><settlement type="city">Firenze</settlement></pubPlace>
+                                        <lb n="160" rend="indent"/><publisher><orgName type="editorial" ref="#SLM">Successori <persName ref="#FLM"><surname></surname>Le Monnier</persName></orgName></publisher>,
+                                        <date when="1878">1878</date>.
+                                    </bibl>
+                                </p>
+                                <p xml:id="paragrafo2_brano3" rend="first-line-indent justify">
+                                    <s>
+                                        <lb n="160"/>Fra le più utili pubblicazioni del momento non esitiamo
+                                        <lb n="161"/>a porre questa <sic><term ref="#SB">Raccolta</term></sic> <corr>raccolta</corr> degli <title level="m" rend="italic">Scritti Biografici</title> del <persName ref="#AM"><surname>Mauri</surname></persName>,
+                                        <ref ana="note22"/>
+                                        <lb n="162"/>alla quale la generazione nuova specialmente, così poco dotta
+                                        <lb n="163"/>nella storia contemporanea e così poco curiosa di saperne
+                                        <lb n="164"/>il vero, sarebbe desiderabile che facesse lieta accoglienza.
+                                    </s>
+                                    <s>
+                                        <lb n="161"/>Sono qui, <choice><orig>adunque</orig> <reg>dunque</reg></choice>, raccolte memorie di uomini dotti e di
+                                        <ref ana="note23"/>                     
+                                        <lb n="162"/>uomini politici, della maggior parte <choice><orig>de&#8217;</orig> <expan>dei</expan></choice> quali si è reso chiaro
+                                        <lb n="163"/>il nome negli ultimi tempi &#40;e di altri è desiderabile non si
+                                        <lb n="164"/>perda ogni rimembranza&#41; e che qual più, qual meno hanno
+                                        <lb n="165"/>avuto parte agli ultimi rivolgimenti <term type="national_concept">italiani</term>, o si trovano
+                                        <lb n="166"/>collegati al movimento intellettuale dell&#8217;<term type="saying">età nostra</term>. Avremmo
+                                        <lb n="167"/>perciò, per dar maggior omogeneità alia materia, lasciato
+                                        <lb n="168"/>volentieri da parte le prime biografie, e cominciato addirit­-
+                                        <lb n="169" break="no"/>tura da quella del <persName ref="FL"><surname>Londonio</surname></persName>: e nella varietà degli scritti se
+                                        <lb n="170"/>ne sarebbe senza dubbio avvantaggiata per tal modo l&#8217;unità
+                                        <lb n="171"/>intrinseca dell&#8217;opera.
+                                    </s>
+                                </p>
+                                <p xml:id="paragrafo3_brano3" rend="first-line-indent justify">
+                                        <s>
+                                            <lb n="172"/>La raccolta non è stata <distinct>sopravegliata</distinct> dall&#8217;<persName ref="#AM"><forename><choice><orig><abbr>A.</abbr></orig> <expan>Autore</expan></choice></forename></persName>, ma da
+                                            <ref ana="note25"/>
+                                            <lb n="173"/>altri: e fra le ragioni addotte dall&#8217;editore vi è questa, che
+                                            <lb n="174"/>a noi pare, <sic>ed</sic> <corr>e</corr> anche ad altri potrà parere, singolarissima:
+                                            <lb n="175"/>che, cioè, sarebbe stato <cit><quote>«poca convenienza al <persName ref="#AM"><surname>Mauri</surname></persName> farsi
+                                            <lb n="176"/>editore di queste cose»</quote> <bibl>&#40;<measure unit="pages"> <abbr>pag.</abbr> <expan>pagina</expan> <num type="roman">II</num></measure>&#41;</bibl></cit>.
+                                            <ref ana="note24"/>
+                                        </s>
+                                        <s>
+                                            Confessiamo di non in­-
+                                            <lb n="177" break="no"/>tendere in che sarebbe consistita la <quote>«poca convenienza»</quote> di
+                                            <lb n="178"/>un autore che giunto in là <choice><orig>cogli</orig> <expan>con gli</expan></choice> anni, e quando il suo nome
+                                            <lb n="179"/>è già noto e riverito, raccoglie amorosamente, coordina e
+                                            <lb n="180"/>corregge le cose sue ripubblicandole.
+                                        </s>
+                                        <s>
+                                            Noi avremmo invece
+                                            <lb n="181"/>preferito che l&#8217;<persName ref="#AM"><forename><choice><orig><abbr>A.</abbr></orig> <expan>Autore</expan></choice></forename></persName> stesso si sobbarcasse a questa fatica,
+                                            <lb n="182"/>certo non grave e indubbiamente assai utile; e l&#8217;opera ne
+                                            <lb n="183"/>avrebbe guadagnato non poco.
+                                        </s>
+                                        <s>
+                                            Si capisce bene che passate
+                                            <ref ana="note4"/>
+                                            <ref target="#terzobrano_pg2_colSX">
+                                                <lb n="184"/>l&#8217;occasione e l&#8217;impressione che hanno fatto prendere la
+                                                <lb n="185"/>penna, i giudizi a poco a poco possono modificarsi, e per
+                                                <lb n="186"/>nuovi particolari mutarsi le notizie degli avvenimenti. 
+                                            </ref>                       
+                                        </s>
+                                        <ref target="#terzobrano_pg2_colSX">
+                                            <s>
+                                            
+                                                È pro­-
+                                                <lb n="187" break="no"/>babile, ad esempio, che, se vi fosse tornato sopra, <term type="literary_usage">il</term> <persName ref="#AM"><forename>Mauri</forename></persName>
+                                                <lb n="188"/>non avrebbe lasciato correre nella biografia <term type="literary_usage">del</term> <persName ref="LCF"><surname>Farini</surname></persName>, che
+                                                <lb n="189"/>all&#8217;impresa delle <region type="region"><geogName>Marche</geogName></region> e dell&#8217;<region type="region"><geogName>Umbria</geogName></region>, <persName ref="#NIII"><forename>Napoleone</forename> <genName><num type="roman">III</num></genName></persName> non
+                                                <ref ana="note26"/>
+                                                <lb n="190"/>fu consenziente, quando tutti ormai sanno il contrario, e
+                                                <lb n="191"/>chi scrive udì la cosa dalla bocca stessa <term type="literary_usage">del</term> <persName ref="LCF"><surname>Farini</surname></persName>, sola con­-
+                                                <lb n="192" break="no"/>dizione o raccomandazione imperiale essendo il far presto
+                                                <lb n="193"/>e con forza.
+                                             </s>
+                                       </ref>
+                                </p>
+                                    <pb xml:id="p1"/>
+                            </div>
+                        </div>
+                        <div type="page">
+                            <div type="section" xml:id="terzobrano_pg2_colSX">
+                                <p xml:id="paragrafo4_brano3" rend="first-line-indent justify">
+                                    <s>
+                                        <lb n="194"/>Anche la ricorrenza troppo frequente di certe forme di
+                                        <lb n="195"/>stile potevasi togliere, se altri che l&#8217;<roleName ref="#AM"><choice><orig><abbr>A.</abbr></orig> <expan>Autore</expan></choice></roleName> non fosse stato edi­-
+                                        <lb n="196" break="no"/>tore. 
+                                     </s>    
+                                     <s>
+                                        Non piacerà a molti la parola <mentioned rend="italic">trasordini</mentioned> per <mentioned rend="italic">disordini</mentioned>,
+                                        <lb n="197"/>spesso ripetuta, e che se è di lingua, non è <sic>nè</sic> <corr>né</corr> bella <sic>nè</sic> <corr>né</corr> viva:
+                                        <lb n="198"/><sic>nè</sic> <corr>né</corr> piacerà quel frequente modo adoperato <term type="literary_usage">dal</term> <persName ref="#AM"><forename>Mauri</forename></persName>
+                                        <lb n="199"/>del <mentioned rend="italic">rizzarsi in uomo politico</mentioned>. 
+                                        <ref ana="note27"/>
+                                    </s>
+                                    <s>
+                                        Ma su ciò non vogliamo indugiare:
+                                        <lb n="200"/><choice><orig><sic>chè</sic> <corr>ché</corr></orig> <expan>perché</expan></choice> in generale la lingua <term type="literary_usage">del</term> <persName ref="#AM"><forename>Mauri</forename></persName> è di ottima lega, e di
+                                        <lb n="201"/>buono impasto lo stile, sebbene forse un po&#8217;<gap reason="spazio_mancante"/>troppo uniforme.
+                                    </s>
+                                    <s>
+                                        <lb n="202"/>Non però mancano pagine eloquenti, e tali da assicurargli
+                                        <lb n="203"/>un luogo onorevole fra gli scrittori dell&#8217;età nostra. 
+                                    </s>
+                                    <s>
+                                        Ma, per
+                                        <lb n="204"/>tornare al difetto cui accennammo, più spiacciono <sic>ad</sic> <corr>a</corr> una
+                                        <lb n="205"/>continuata lettura, certe forme troppo simili di narrazione
+                                        <lb n="206"/>biografica.
+                                    </s>
+                                    <s>
+                                        Certamente queste Biografie più sono volte a
+                                        <lb n="207"/>ritrarre l&#8217;uomo interiore che non gli avvenimenti esterni:
+                                        <lb n="208"/>offrono più il giudizio sull&#8217;uomo e sul suo valore morale,
+                                        <lb n="209"/>che non abbondino di particolari aneddotici.
+                                    </s>
+                                    <s>
+                                        Ma quel dire
+                                        <lb n="210"/>così sovente, e quasi per formula, che il tale <mentioned rend="italic">andò lieto,</mentioned>
+                                        <lb n="211"/><mentioned rend="italic">esultò, gioì, si rallegrò</mentioned> delle fortune <term type="national_concept">italiche</term>, o per contrario
+                                        <lb n="212"/><mentioned rend="italic">si dolse, si conturbò, si afflisse</mentioned> e simili per le sventure, senza
+                                        <lb n="213"/>maggiormente particolareggiare, se non era difetto appari­-
+                                        <lb n="214" break="no"/>scente quando le Biografie venivano a luce <term type="saying">alla spicciolata</term>,
+                                        <ref ana="note28"/>
+                                        <lb n="215"/>ora che sono insieme raccolte dà <sic>ad</sic> <corr>a</corr> esse un colore troppo
+                                        <lb n="216"/>generico e troppo uniforme: <sic>nè</sic> <corr>né</corr> avremmo desiderato che l&#8217;<roleName ref="#AM"><choice><orig><abbr>A.</abbr></orig> <expan>Autore</expan></choice></roleName>
+                                        <lb n="217"/>stesso modificasse queste forme consimili per mero avvedi­-
+                                        <lb n="218" break="no"/>mento letterario e di stile, ma <sic>perchè</sic> <corr>perché</corr> entrando meglio e
+                                        <lb n="219"/>più addentro nel pensiero e nell&#8217;animo di ciascuno dei suoi
+                                        <lb n="220"/>elogiati, ne avrebbe meglio scolpita l&#8217;immagine, e l&#8217;una
+                                        <lb n="221"/>fatta meglio diversa dall&#8217;altra.
+                                    </s>              
+                                </p>
+                                <p xml:id="paragrafo5_brano3" rend="first-line-indent justify">
+                                    <s>
+                                        <lb n="222"/>Ma se i particolari non sono sempre abbondanti e re­-
+                                        <lb n="223" break="no"/>conditi, le notizie sono generalmente sicure.
+                                    </s>
+                                    <s>
+                                        Due soli e pic­-
+                                        <lb n="224" break="no"/>coli errori di fatto ci venne dato di rilevare: l&#8217;uno a <choice><orig><abbr>pag.</abbr></orig> <expan>pagina</expan></choice> <num>198</num>
+                                        <lb n="225"/>del <num type="ordinal">1°</num> volume dove si confondono insieme <persName ref="GT"><forename>Giuseppe</forename> <surname>Torelli</surname></persName>
+                                        <lb n="226"/>&#40;<addName type="epithet">Ciro d&#8217;Arco</addName>&#41; e <persName ref="#LT"><forename>Luigi</forename> <surname>Torelli</surname></persName>: e l&#8217;altro a <choice><orig><abbr>pag.</abbr></orig> <expan>pagina</expan></choice> <num>433</num> del <num type="ordinal">2°</num>,
+                                        <lb n="227"/>dove <persName ref="#GV"><forename>Giovanni</forename> <surname>Ventura</surname></persName> è detto <persName><forename>Francesco</forename></persName>
+                                    </s>
+                                </p>
+                                <p xml:id="paragrafo6_brano3" rend="first-line-indent justify">
+                                    <s>
+                                        <lb n="228"/>Nonostante queste piccole mende, che la critica ha dritto
+                                        <lb n="229"/>di far notare, e che sono tali che veramente non ne scapita
+                                        <lb n="230"/>il pregio dell&#8217;opera, noi ripetiamo che buon pensiero fu
+                                        <lb n="231"/>quello di raccogliere insieme questi sparsi Ricordi biogra-
+                                        <lb n="232" break="no"/>fici e storici. 
+                                    </s>
+                                    <s>
+                                        Tutti leggeranno con piacere e con utilità le
+                                        <lb n="234"/>biografie, fra le altre, <term type="literary_usage">del</term> <persName ref="#GTorti"><surname>Torti</surname></persName>, <term type="literary_usage">del</term> <persName ref="#LM"><surname>Melzi</surname></persName>, <term type="literary_usage">del</term> <persName ref="#LCF"><surname>Farini</surname></persName>, dei
+                                        <lb n="235"/>due <persName ref="#FranA #FilipA"><surname>Ambrosoli</surname></persName>, <term type="literary_usage">del</term> <persName ref="GR"><surname>Robecchi</surname></persName>, <term type="literary_usage">del</term> <persName ref="#LDA"><surname><sic>Desambrois</sic> <corr>Des Ambrois</corr></surname></persName>, <term type="literary_usage">del</term> <persName ref="#AT"><surname>Theiner</surname></persName>,
+                                        <lb n="236"/> <term type="literary_usage">del</term> <persName ref="#MC"><surname>Castelli</surname></persName>.
+                                    </s>
+                                    <s>
+                                        La generazione passata vi troverà memorie
+                                        <lb n="237"/>oneste e gloriose da rinfrescare: la presente, esempi di ope­-
+                                        <lb n="238" break="no"/>rosità e di patriottismo da imitare.
+                                    </s>
+                                </p>
+                                <space/>
+                                <p xml:id="paragrafo7_brano3" rend="justify">
+                                  <lb n="239"/>
+                                    <bibl>
+                                    <author xml:id="FA"><persName><forename>Filomeno</forename><surname>Abate</surname></persName></author>. 
+                                    <title type="m" rend="italic"><foreign xml:lang="fr" ><persName ref="#DA"><forename>Dante</forename></persName> dans les impressions <persName ref="#ADL"><surname>de Lamartine</surname></persName></foreign>.</title>
+                                    <lb n="240" rend="indent"/>- <pubPlace><settlement type="town">Messina</settlement></pubPlace>, <orgName type="role"><abbr>tip.</abbr> <expan>tipografia</expan><name>Capra</name></orgName>, <date when="1878">1878</date>.                              
+                                   </bibl>
+                                </p>
+                                <p xml:id="paragrafo8_brano3" rend="first-line-indent justify">
+                                    <s>
+                                    <lb n="241"/>Non conosciamo il <addName type="epithet">signor</addName> <persName><forename>Filomeno</forename> <surname>Abate</surname></persName>, ma ci pren­-
+                                    <lb n="242" break="no"/>diamo la libertà di consigliarlo a studiar meglio un&#8217;altra
+                                    <lb n="243"/>volta i fatti intorno ai quali egli si accinge a scrivere. 
+                                    </s>
+                                    <s>
+                                        <sic>Per­-
+                                        <lb n="244" break="no"/>chè</sic> <corr>Perché</corr> <persName ref="#DA"><forename>Dante</forename></persName> ha fatto dire a <persName ref="#FDR"><forename>Francesca</forename></persName> che ella leggeva con
+                                        <lb n="245"/><persName ref="#PM"><forename>Paolo</forename></persName> la storia di <persName role="character" ref="#L"><forename>Lancillotto</forename></persName>, non ne viene davvero la con­-
+                                        <ref ana="note29"/>
+                                        <lb n="246" break="no"/>seguenza, come dice il <addName type="epithet">signor</addName> <persName><surname>Abate</surname></persName>, che <quote><foreign xml:lang="fr">«<persName ref="#FDR"><forename>Francesca</forename></persName> <addName>da
+                                        <lb n="247"/><settlement type="town">Rimini</settlement></addName> est un épisode puisé dans le <term type="literary espression">cycle d&#8217;<persName ref="A"><forename>Arthur</forename></persName></term><sic>.</sic>» <corr>.</corr></foreign></quote>
+                                        <ref ana="note30"/>
+                                    </s>
+                                    <s>
+                                        Il
+                                        <lb n="248"/><addName type="epithet">signor</addName> <persName><surname>Abate</surname></persName> legga, se non altro, il commento <term type="literary_usage">del</term> <persName ref="#GB"><surname>Boccac­-
+                                        <lb n="249" break="no"/>cio</surname></persName>, e si accorgerà che la sua <foreign xml:lang="fr" rend="italic">méprise</foreign> è piuttosto colossale.
+                                    </s>
+                                    <s>
+                                        <lb n="249"/>Ma questo benedetto <term type="literary espression">ciclo di<persName ref="A"><forename>Arturo</forename></persName></term> esercita un fàscino sin-
+                                        <ref target="#terzobrano_pg2_colDX">
+                                            <lb n="250" break="no"/>golare sulla mente del <roleName ref="FA">professore</roleName> di lingue di <settlement type="town">Messina</settlement>.
+                                        </ref>
+                                    </s>
+                                    <ref target="#terzobrano_pg2_colDX">
+                                        <s>
+                                        
+                                            Egli
+                                            <lb n="251"/>non è contento di vederci dentro <persName><forename>Francesca</forename></persName> <addName>da <settlement type="town">Rimini</settlement></addName>; ma
+                                            <lb n="252"/>aggiunge che <quote xml:lang="fr">«<persName ref="#LP"><surname>Pulci</surname></persName> et <persName ref="#MMB"><surname>Boiardo</surname></persName> puisent leurs fictions dans
+                                            <lb n="253"/>le <term type="literary espression">cycle d&#8217;<persName ref="A"><forename>Arthur</forename></persName></term>. <term type="literary usage">Le</term> <persName xml:lang="fr" ref="TT"><surname>Tasse</surname></persName> trouva dans le <term type="literary espression">cycle d&#8217;<persName ref="A"><forename>Arthur</forename></persName></term>
+                                            <ref ana="note30"/>
+                                            <lb n="254"/>l&#8217;idée première d&#8217;<persName role="character">Olinde</persName> et <persName role="character">Sopbronie</persName><sic>.</sic> »</quote> <corr>.</corr>
+                                            <ref ana="note31"/>
+                                        </s>
+                                        <s>
+                                            <sic>Nè</sic> <corr>Né</corr> sono queste le
+                                            <lb n="255"/>sole scoperte del <addName type="epithet">signor</addName> <persName><surname>Abate</surname></persName>.                                                                             
+                                        </s>
+                                        <s>
+                                            Egli sa che <persName ref="#BL"><forename>Brunetto</forename> <surname>La-
+                                            <lb n="256" break="no"/>tini</surname></persName> scrisse una grammatica <term type="national concept">francese</term> <quote xml:id="fr">«appelée <bibl><title xml:lang="fr">Le livre de
+                                                <lb n="257"/>la bonne parleur</title></bibl><sic>,</sic> »</quote> <corr>,</corr> fatto di una importanza enorme, che rac­-
+                                            <lb n="258" break="no"/>comandiamo caldamente all&#8217;attenzione dei romanisti.                                                   
+                                        </s>
+                                        <s>
+                                            E sa
+                                            <lb n="259"/>ancora che <persName ref="MCa"><forename>Marino <surname>Canale</surname></forename></persName> &#40;sic&#41; fece <quote xml:lang="fr">«une traduction de
+                                            <ref ana="note32"/>
+                                            <lb n="260"/>l&#8217;histoire latine de <settlement type="city">Venise</settlement> en vieux français<sic>;</sic> »<corr>;</corr></quote> e sa &#40;altro
+                                            <lb n="261"/>fatto che gioverà molto alla nostra storia letteraria&#41; che <term type="literary usage">il</term>
+                                            <lb n="262"/><persName ref="#FP"><surname>Petrarca</surname></persName> scrisse <quote xml:lang="fr">« en langue d&#8217;oc un grand nombre de vers
+                                            <lb n="263"/>estimés alors<sic>.</sic>» <corr>.</corr></quote>
+                                        </s>
+                                        <s>
+                                            Pare ancora che il <addName type="epithet">signor</addName> <persName><surname>Abate</surname></persName> creda scritti
+                                            <lb n="264"/>in provenzale <title type="m">i viaggi di <persName ref="JDM"><surname>Mandeville</surname></persName></title>, il che è erroneo. 
+                                        </s>
+                                        <s>
+                                            Tra­-
+                                            <lb n="265" break="no"/>duce il verso di <persName ref="#DA"><forename>Dante</forename></persName>     
+                                            <lb n="266"/> <quote rend="indent">« Versi d&#8217;amore e prose di romanzi, »</quote>
+                                            <lb n="267"/> <quote xml:lang="fr">« les écrits d&#8217;amour en vers et tous les romans en prose, »</quote>
+                                            <lb n="268"/>il che non è punto esatto; cita degli scrittori <term type="national concept">francesi</term> che
+                                            <lb n="269"/>non s&#8217;intende chi <distinct>sieno</distinct> <reg>siano</reg> <quote>« <persName>Les Paulin</persName>,<persName> les Guesnard</persName>,<persName> les
+                                           <lb n="269.1"/> Méons</persName>,<persName> Molan</persName>, »</quote> <foreign><choice><abbr xml:lang="la">etc.</abbr> <expan xml:lang="la">etcetera</expan></choice></foreign> 
+                                        </s>
+                                    </ref>
+                                </p>
+                            </div>
+                            
+                            <div type="section" xml:id="terzobrano_pg2_colDX">
+                                <p xml:id="paragrafo9_brano3" rend="first-line-indent justify">
+                                    <s>
+                                        <lb n="270"/>Un più accurato studio delle letterature romanze gio­-
+                                        <lb n="271" break="no"/>verà molto, come vedesi, all&#8217;<roleName ref="#FA"><choice><orig><abbr>A.</abbr></orig> <expan>Autore</expan></choice></roleName> di questo scritto, che nella
+                                        <lb n="272"/>parte riguardante <persName ref="#ADL"><surname>Lamartine</surname></persName> non contiene che delle ripe­-
+                                        <lb n="273" break="no"/>tizioni di cose già note da lungo tempo.
+                                    </s>
+                                </p>
+                                <p xml:id="paragrafo10_brano3" rend="justify">      
+                                    <bibl>
+                                        <author>
+                                            <lb n="274"/><persName ref="#FLe"><forename>François</forename> <surname>Lenormant</surname></persName></author>. <foreign xml:lang="fr" ><title type="main" level="m" rend="italic">La monnaie dans l&#8217;antiquité</title>:<title type="sub" xml:lang="fr"> leçons
+                                            <lb n="275" rend="indent"/>professées dans la chaire d&#8217;archéologie près la Bibliotèque
+                                            <lb n="275" rend="indent"/> nationale en 1875-1877</title></foreign>; 
+                                        <biblScope>
+                                            <unit type="volume"><abbr>tom.</abbr> <num type="roman">I</num> et <num type="roman">II</num></unit>. 
+                                        </biblScope> — <pubPlace><settlement type="city">Paris</settlement></pubPlace>, <editor><persName><forename><choice><abbr>A.</abbr> <expan>Arthur</expan></choice></forename><surname>Lévy</surname></persName></editor>,
+                                            <lb n="276" rend="indent"/><publisher><orgName type="editorial">Maisonneuve et C.</orgName></publisher>, <publisher><orgName type="editorial">Rollin et <sic>Feurdent</sic><corr> Feuardent</corr></orgName></publisher>, <date when="1878">1878</date>. 
+                                    </bibl>              
+                                </p>
+                                <p xml:id="paragrafo11_brano3" rend="first-line-indent justify">
+                                    <s>
+                                        <lb n="277"/>Il versatile ingegno del <addName type="epithet">signor</addName> <persName ref="#FLe"><surname>Lenormant</surname></persName> ci dà una
+                                        <lb n="278"/>prova novella del suo sapere e delle sue attitudini con una
+                                        <lb n="279"/>storia della moneta nell&#8217;antichità, opera vasta di cui ab­-
+                                        <lb n="280" break="no"/>biamo dinanzi i due primi volumi. 
+                                    </s>
+                                    <s>   
+                                        Già il titolo dell&#8217;opera
+                                        <lb n="281"/>annunzia due imprese che <term type="literary usage">il</term> <persName ref="#FLe"><surname>Lenormant</surname></persName> può dirsi sia il
+                                        <lb n="282"/>primo a tentare. 
+                                    </s>
+                                    <s>
+                                        Un corso pubblico di numismatica è cosa
+                                        <lb n="283"/>nuova, ed è facile intenderne la difficoltà per una scienza
+                                        <lb n="284"/>che è così arduo ridurre a principii indipendenti da ogni
+                                        <lb n="285"/>esperienza personale <sic>ed</sic> <corr>e</corr> in cui la quantità e la varietà dei
+                                        <lb n="286"/>fatti è tale che appena par possibile riunirli tutti in un
+                                        <lb n="287"/>organismo scientifico.                                     
+                                    </s>
+                                    <s>
+                                        Dopo aver tentato felicemente la prova
+                                        <lb n="288"/>nell&#8217;insegnamento, ora pone <term type="literary usage">il</term> <persName ref="#FLe"><surname>Lenormant</surname></persName> il suo lavoro di­-
+                                        <lb n="289" break="no"/>nanzi al pubblico ed è egli il primo che in un&#8217;opera di
+                                        <lb n="290"/>largo piano, non rivolta ai soli specialisti, riassume tutta
+                                        <lb n="291"/>questa scienza <sic>qual&#8217;è</sic> <corr>qual è</corr> oggi veduta e organizzata dopo i
+                                        <lb n="292"/>passi grandissimi che ha fatti da <persName ref="#JE"><surname>Eckhel</surname></persName> in poi, estendendo
+                                        <lb n="293"/>quanto il <persName ref="#TM"><surname>Mommsen</surname></persName> fece per la moneta <term type="regional concept">romana</term> <sic>ed</sic> <corr>e</corr> il <persName ref="#CGB"><surname>Brandis</surname></persName>
+                                        <lb n="294"/>per la moneta <term type="continental concept">asiatica</term>, a tutta la storia della moneta presso
+                                        <lb n="295"/>tutti i popoli dell&#8217;antichità, compresa anche la <country>Cina</country>, la
+                                        <lb n="296"/><country>Corea</country>, il <country>Giappone</country>.
+                                        
+                                    </s>
+                                    <s>
+                                        Dopo un libro di <term rend="italic">Prolegomeni</term> che rias-
+                                        <ref ana="note33"/>
+                                        <lb n="297"/>sume nozioni di natura più generale, seguono tre libri che
+                                        <lb n="298"/>parlano della moneta antica nei tre aspetti distinti dai giu­-
+                                        <lb n="299" break="no"/>reconsulti<term type="regonal concept">romani</term>, secondo cioè la materia, la legge, la forma.             
+                                    </s>
+                                    <s>
+                                        <lb n="300"/>Un quinto libro parla della paleografia monetaria. 
+                                    </s> 
+                                    <s>
+                                        Final­-
+                                        <lb n="301" break="no"/>mente in altri tre libri si parla della moneta per paesi,
+                                        <ref ana="note4"/>
+                                        <lb n="302"/>prima dell&#8217;<term type="geographical concept">orientale</term> e <term type="national concept">greca</term>, poi della <term type="national concept">italica</term> e <term type="regional concept">romana</term> e
+                                        <lb n="303"/>per ultimo di quella dell&#8217;estremo <term type="geographical concept">oriente</term>. 
+                                    </s>
+                                    <s>
+                                        Il programma di
+                                        <lb n="304"/>questi otto libri è dato dall&#8217;<roleName ref="#FLe"><choice><orig><abbr>A.</abbr></orig> <expan>Autore</expan></choice></roleName> in principio dell&#8217;opera della
+                                        <lb n="305"/>quale i due volumi venuti a luce non contengono che tre libri.                                    
+                                    </s>
+                                </p>
+                                <p xml:id="paragrafo12_brano3" rend="first-line-indent justify">
+                                    <s>
+                                        <lb n="306"/>La numismatica è quello fra i vari rami dello studio
+                                        <lb n="307"/>dell&#8217;antichità che fin qui era più esclusivamente coltivato
+                                        <lb n="308"/>dai soli specialisti. 
+                                    </s>
+                                    <s>
+                                        Molti uomini dotti, quasi tutti quelli
+                                        <lb n="309"/>che non sono numismatici di professione, sono più versati
+                                        <lb n="310"/>in qualunque altra disciplina che in questa.
+                                    </s>
+                                    <s> Eppure l&#8217;im­-
+                                        <lb n="311" break="no"/>portanza di questo studio per le indagini storiche e per la
+                                        <lb n="312"/>conoscenza dei popoli antichi sotto più d&#8217;un rapporto è
+                                        <lb n="313"/>evidente.
+                                    </s>
+                                    <s>
+                                        E dunque quasi superfluo il dire che l&#8217;opera <term type="literary usage">del</term>
+                                        <ref target="#terzobrano_pg3_colSX">
+                                            <lb n="312"/><persName ref="#FLe"><surname>Lenormant</surname></persName> giunge opportuna e desiderata, come quella che
+                                            <lb n="313"/>avrà per effetto di stringer meglio il legame di questa con le
+                                            <lb n="314"/>altre discipline, rendendola, con un libro di facile uso, ac­-
+                                            <lb n="315" break="no"/>cessibile a tutti nel suo complesso organico e nella entità
+                                            <lb n="316"/>dei fatti risultanti da lunghe e minute indagini dall&#8217;<roleName ref="#FLe"><choice><orig><abbr>A.</abbr></orig> <expan>Autore</expan></choice></roleName> stesso
+                                            <lb n="317"/>e di altri. 
+                                        </ref>                                       
+                                    </s>
+                                    <ref target="#terzobrano_pg3_colSX">
+                                        <s>
+                                            Anche gli uomini meno amanti degli studi
+                                            <lb n="318"/>classici e archeologici, vogliam dire gli economisti, si gio­-
+                                            <lb n="318" break="no"/>veranno di questo libro che pone a portata loro la cono­-
+                                            <lb n="319" break="no"/>scenza di fatti notevoli e di dati d&#8217;antica esperienza in
+                                            <lb n="320"/>una materia così fondamentale pei loro studi.
+                                        </s>
+                                        <s>
+                                            L&#8217;<roleName ref="#FLe"><choice><orig><abbr>A.</abbr></orig> <expan>Autore</expan></choice></roleName> è uomo
+                                            <lb n="321"/>noto e <distinct>niuno</distinct> <reg>nessuno</reg> potrà negare la sua competenza così per quelle
+                                            <lb n="322"/>parti ch&#8217;egli ha potuto trattare per fatto d&#8217;indagine pro­-
+                                            <lb n="323" break="no"/>pria, come per quelle nelle quali ha dovuto limitarsi a rias­-
+                                            <lb n="324" break="no"/>sumere il lavoro altrui. 
+                                        </s>
+                                        <s>
+                                            Tutto quanto è discutibile è discusso
+                                            <lb n="325"/> da lui, e ciò anima la sua opera e ne accresce il valore
+                                            <lb n="326"/> scientifico. 
+                                        </s>
+                                        <s>
+                                            In critiche minute non potremmo entrare in
+                                            <lb n="327"/>questo luogo, tanto speciale essendo l&#8217;argomento. 
+                                        </s>
+                                        <s>
+                                            In ge­-
+                                            <lb n="328" break="no"/>nerale però possiam dire che il libro pecca per eccesso,
+                                            <lb n="329"/>come altri <term type="literary usage">del</term> <persName ref="#FLe"><surname>Lenormant</surname></persName>. 
+                                        </s>
+                                        <s>
+                                            <distinct>Lungi</distinct> <reg>Lontano</reg> dal limitarsi a quanto
+                                            <lb n="330"/>più necessariamente imponeva il soggetto egli sembra <distinct>siasi</distinct> <reg>si sia</reg>
+                                            <lb n="331"/>studiato di aumentarne le proporzioni. 
+                                            <ref ana="note34"/>
+                                        </s>
+                                        <s>
+                                            Dell&#8217;ultimo libro,
+                                            <lb n="332"/>che non può avere alcun rapporto organico col resto, si
+                                            <ref ana="note4"/>
+                                            <lb n="333"/>poteva fare a meno.
+                                        </s>
+                                        <s>
+                                            Il concetto complesso e storicamente
+                                            <lb n="334"/>uno che risponda alla parola <mentioned rend="italic">antichità</mentioned> non include affatto i
+                                            <lb n="335"/>popoli dell&#8217;estremo <term type="geographical concept">oriente</term> dei quali si poteva parlare in   
+                                            <ref ana="note4"/>                                      
+                                        </s>
+                                        <s>
+                                            <lb n="336"/>una storia generale della moneta, non però in un&#8217;opera con-­
+                                            <lb n="337"/>sacrata alla moneta nell&#8217;<mentioned rend="italic">antichità</mentioned>.
+                                        </s>
+                                        <s>
+                                            Il quinto libro anche ci
+                                            <lb n="338"/>sembra eccessivo, almeno secondo il programma che ne
+                                            <lb n="339"/>vien dato.
+                                        </s>
+                                        <s>
+                                            Sotto il titolo di paleografia numismatica sembra
+                                            <lb n="340"/>che l&#8217;<roleName ref="#FLe"><choice><orig><abbr>A.</abbr></orig><expan>Autore</expan></choice></roleName> voglia rifare una gran parte della storia della
+                                            <lb n="341"/>scrittura e di una moltitudine di alfabeti, mentre in realtà
+                                            <lb n="342"/>poteva limitarsi alle speciali notizie paleografiche &#40;non sono
+                                            <lb n="343"/>poi tante&#41; utili esclusivamente per la numismatica e non os­-
+                                            <lb n="344" break="no"/>servabili nell&#8217;epigrafia, o nella paleografia antica più gene­-
+                                            <lb n="345" break="no"/>rale.
+                                        </s>
+                                        <s>
+                                            Ma intendiamo la predilezione dell&#8217;<roleName ref="#FLe"><choice><orig><abbr>A.</abbr></orig><expan>Autore</expan></choice></roleName> per un tema
+                                            <lb n="346"/>sul quale ha già scritto un&#8217;opera meritamente stimata.
+                                        </s>
+                                        <s>
+                                            <lb n="347"/>Notizie storiche su questi studi di numismatica, contiene
+                                            <lb n="348"/>la prefazione, notizie bibliografiche danno le note; e in
+                                            <lb n="349"/>queste parti l&#8217;<roleName ref="#FLe"><choice><orig><abbr>A.</abbr></orig> <expan>Autore</expan></choice></roleName> è stato forse più sobrio del dovere.
+                                        </s>
+                                        <s>
+                                            Ve-
+                                            <lb n="350" break="no"/>diamo non senza sgomento che nel programma non si parla 
+                                            <ref ana="note4"/>
+                                            <lb n="351"/>di un indice generale.                                   
+                                        </s>
+                                    </ref>
+                                </p>
+                            </div>
+                             
+                            <div type="section" xml:id="terzobrano_pg3_colSX">
+                            </div>
+                        </div>
+                        </body>
+                    </text>
+                    <text xml:id="libri_per_fanciulli">
+                        <front>
+                            <div type="subtitle" xml:id="subtit_bibl2">
+                                <head rend="align(center) case(allcaps)">
+                                    <lb n="352"/>LIBRI PEI FANCIULLI.
+                                </head> 
+                            </div>
+                        </front>
+                        <body>
+                        <div type="page">
+                            <div type="section" xml:id="quartobrano_pg1_colSX">
+                                <ab xml:id="paragrafo1_brano4" rend="justify">
+                                    <bibl>
+                                        <lb n="353"/><author rend="case(allcaps)"><abbr>A.</abbr> DI <persName><abbr>L.</abbr><surname>MODIGLIANI</surname></persName></author>.
+                                        <title rend="italic">La curiosità appagata</title>. &#x2014;
+                                        <pubPlace><settlement type="town">Firenze</settlement></pubPlace>,
+                                        <orgName>
+                                            <roleName><abbr>tip</abbr> <expan>tipografia</expan></roleName>
+                                        <lb n="354" rend="indent"/><name>Cooperativa</name>
+                                        </orgName>
+                                        <date when="1878">1878</date>
+                                    </bibl>                              
+                                </ab>
+                                <p xml:id="paragrafo2_brano4" rend="first-line-indent justify">
+                                    <s>
+                                        <lb n="345"/>Pare che con questo <distinct>libriccino</distinct> l&#8217;<roleName><choice><orig><abbr>A.</abbr></orig> <expan>Autore</expan></choice></roleName> voglia venire in aiuto
+                                        <lb n="346"/>dei genitori imbarazzati nel rispondere alle domande che i
+                                        <lb n="347"/>fanciulli sogliono muovere intorno ai fenomeni naturali: e
+                                        <lb n="348"/>d&#8217;altro canto dal <distinct>tuono</distinct> <reg>tono</reg> che assume, pare ch&#8217;egli intenda
+                                        <lb n="349"/>imbandire un&#8217;amena lettura ai piccini piuttosto che ai
+                                        <lb n="350"/>grandi. 
+                                    </s>
+                                    <s>
+                                        Ma non raggiunge <sic>nè</sic> <corr>né</corr> l&#8217;uno <sic>nè</sic> <corr>né</corr> l&#8217;altro scopo.
+                                    </s>                    
+                                </p>
+                                <p xml:id="paragrafo3_brano4" rend="first-line-indent justify">
+                                    <s>
+                                        <lb n="351"/>Come libro di lettura è di gran lunga inferiore a quelli
+                                        <lb n="352"/>che già abbiamo.
+                                    </s>
+                                </p>
+                                <p xml:id="paragrafo4_brano4" rend="first-line-indent justify">
+                                    <s>
+                                        <lb n="353"/>Come raccolta di nozioni scientifiche è cosa tanto povera
+                                        <lb n="354"/>e sbagliata, che confina coll&#8217;ironia. 
+                                    </s>
+                                    <s>
+                                        Il sole &#40;<abbr>p.</abbr> <expan>pagina</expan> <num>7</num>&#41; è formato
+                                        <lb n="355"/><quote>«di vapori che stanno serrati gli uni contro gli altri<sic>;</sic>»</quote> <corr>;</corr>
+                                        <lb n="356"/> e dopo &#40;<abbr>p.</abbr> <expan>pagina</expan> <num>23</num>&#41; <quote>«il vapore è quel fumo bianco che manda
+                                        <lb n="357"/>fuori una pentola quando bolle<sic>;</sic>»</quote> <corr>;</corr> e <abbr>p.</abbr> <expan>pagina</expan> <num>25</num> la brina è costi­-
+                                        <lb n="358" break="no"/>tuita da pallottoline bianche di ghiaccio; a <abbr>p.</abbr> <expan>pagina</expan> <num>40</num> è spiegata
+                                        <lb n="359"/>la formazione dei fiocchi di neve dicendo che i <term type="literary usage" rend="italic">fili</term> di pioggia
+                                        <lb n="360"/> spinti dal vento, si raccolgono, s&#8217;accavalcano, s&#8217;intrecciano.
+                                    </s>
+                                </p>
+                                <p xml:id="paragrafo5_brano4" rend="first-line-indent justify">
+                                    <s>
+                                        <lb n="361"/>L&#8217;<roleName><choice><orig><abbr>A.</abbr></orig> <expan>Autore</expan></choice></roleName> visita gli <placeName><geogName>Appennini</geogName></placeName> per diletto e per farvi degli
+                                        <lb n="362"/>studi e giunto in vetta del <placeName><geogName>Corno alle Scale</geogName></placeName>, si trova avere
+                                        <lb n="363"/>fra le mani un barometro &#40;<abbr>p.</abbr> <expan>pagina</expan> <num>47</num>&#41; contenente molto mer­-
+                                        <lb n="364" break="no"/>curio &#40;<abbr>p.</abbr> <expan>pagina</expan> <num>48</num>&#41; e con la sua lancetta che stava sullo zero,
+                                        <lb n="365"/>ossia non marcava più nulla, in riva al mare. 
+                                    </s>
+                                    <s>
+                                        Questo <distinct>ma-
+                                        <lb n="366" break="no"/>raviglioso</distinct> <reg>meraviglioso</reg> <distinct>istrumento</distinct> <reg>strumento</reg> predice il tempo benissimo, <sic>perchè</sic> <corr>perché</corr>
+                                        <lb n="367"/>&#40;<abbr>p.</abbr> <expan>pagina</expan> <num>49</num>&#41; i vapori o nubi, per quanto si ammassino a grandi
+                                        <lb n="368"/>altezze, pure ci <term rend="italic">tagliano</term> sempre l&#8217;aria e ce la convertono
+                                        <lb n="369"/>in grossa e <term rend="italic">pesante</term>. 
+                                    </s>
+                                    <s>
+                                        I liquidi preferiti pei termometri &#40;<abbr>p.</abbr> <expan>pagina</expan> <num>5</num>&#41;
+                                        <lb n="370"/>sono l&#8217;alcool e il mercurio, <sic>perchè</sic> <corr>perché</corr> salgono e discendono con
+                                        <lb n="371"/>più facilità degli altri.
+                                    </s>
+                                    <s>
+                                        L&#8217;elettricità è un gas &#40;<abbr>p.</abbr> <expan>pagina</expan> <num>52</num>&#41; <sic>ed</sic> <corr>e</corr> il 
+                                        <lb n="372"/>fulmine non è altro che elettricità infiammata.                                    
+                                    </s>
+                                </p>
+                                <p xml:id="paragrafo6_brano4" rend="first-line-indent justify">
+                                    <s>
+                                        <lb n="373"/><quote>«Com&#8217;è che il cannocchiale <distinct>ravvicina</distinct>? Tutta la forza
+                                        <lb n="374"/>sta in due sole lenti una delle quali ingrandisce l&#8217;altra im­-
+                                        <lb n="375" break="no"/>piccolisce perfettamente tanto quanto ha ingrandito la
+                                        <lb n="376"/>prima<pc type="suspension dots">...</pc> Ecco l&#8217;unica e sola spiegazione del <hi rend="case(allcaps)">DIFFICILE E 
+                                        <lb n="377"/>COMPLICATO</hi> <distinct>istrumento</distinct> <reg>strumento</reg><sic>.</sic> <sic>«</sic> <corr>»</corr></quote><corr>.</corr>
+                                    </s> (Lo stampatello è nel testo). <ref ana="note35"/>
+                                
+                                </p>
+                                <p xml:id="paragrafo7_brano4" rend="first-line-indent justify">
+                                <quote>
+                                    <s>
+                                        <lb n="378"/>«Ma scusi, questo Cielo benedetto che cosa è? <pc>&#x2014;</pc>
+                                    </s>
+                                    <s>
+                                         Uno
+                                        <lb n="379"/>sterminato spazio senza limiti e dove non c&#8217;è nulla. <pc>&#x2014;</pc>;
+                                    </s>
+                                    <s>
+                                        <lb n="380"/>E le stelle, la luna, il sole, come si reggono? <pc>&#x2014;</pc>
+                                    </s>
+                                    <s>
+                                        Nel modo stesso
+                                        <lb n="381"/>che ci reggiamo noi affidati sempre al <genName type="ephitet">Grande Creatore</genName><sic>.</sic>».
+                                    </s>
+                                </quote>
+                               </p>
+                               <p xml:id="paragrafo8_brano4" rend="first-line-indent justify">
+                                    <s>
+                                        <lb n="382"/>Ci pare che basti e n&#8217;avanzi.
+                                    </s>
+                                    <s>
+                                        E non ci saremmo nem­-
+                                        <lb n="383" break="no"/>meno occupati di questo lavoruccio, se non fosse stato lo­-
+                                        <lb n="384" break="no"/>dato dalla stampa quotidiana. 
+                                    </s>
+                               
+                              </p>                                                           
+                            </div>
+                            </div>
+                        </body>
+                    </text>
+                </group>
+            </text>
+            <text xml:id="Notizie">
+                <!--FRONT-->     
+                <!--C10.1-->
+                <front>
+                    <div type="main" xml:id="tit_not">
+                        <head rend="align(center) case(allcaps)">
+                            
+                            <lb n="385"/>NOTIZIE.
+                        </head>
+                    </div>
+                </front> 
+                <body>
+                <div type="page">
+                    <div type="entry" xml:id="primauscita_pg1_colSX">
+                        <ab xml:id="primauscita" rend="justify">
+                            <s>
+                            <lb n="386"/><pc>&#x2014;</pc>L&#8217;<roleName><abbr>avv.</abbr> <expan>avvocato</expan></roleName> <persName><forename>Zanino</forename> <surname>Volta</surname></persName>, discendente dell&#8217;illustre <roleName ref="#AV">fisico</roleName>, sta per pub­-
+                            <lb n="387" break="no"/>blicare un suo studio intitolato: <title type="m" rend="italic">Alessandro Volta a Parigi</title>. 
+                            </s>
+                        </ab>
+                    </div>
+                    <div type="entry" xml:id="secondauscita_pg1_colSX">
+                        <ab xml:id="secondauscita" rend="justify">
+                            <s>
+                            <lb n="388"/><pc>&#x2014;</pc>È morta il <date when="07-16">16 luglio</date> a <settlement type="town">Messina</settlement> la <addName type="epithet">signora</addName> <persName><forename>Laura</forename> <surname>La Racine</surname></persName>, nata
+                            <lb n="389"/><persName><surname>Gonzenbacli</surname></persName>.
+                            </s>
+                            <s>
+                            Essa raccolse e tradusse in <term type="national concept">tedesco</term> varie novelle popolari
+                            <lb n="390"/><term type="regional concept">siciliane</term> che furono pubblicate nel <date when="1870">1870</date>, in <country type="nation">Germania</country>, in due volumi, con
+                            <lb n="391"/>una introduzione di <persName><forename><abbr>O.</abbr></forename> <surname>Hartwig</surname></persName>. 
+                            </s>                            
+                        </ab>
+                    </div>
+                </div>
+                </body>
+            </text>
+     </group>
+ </text>
+
+ 
+
+
+</TEI>

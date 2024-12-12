@@ -1,0 +1,495 @@
+body {
+  font-family: 'Open Sans';
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: 
+  linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), 
+  url("parassitismo_letterario__bibl1.png"); 
+  background-repeat: repeat; 
+  background-position: top left -385px; 
+  background-size: auto; 
+}
+
+#logo {
+  background-color: white;
+  box-shadow: 8px 8px 20px rgba(40, 17, 91, 0.397);
+  width: 75%;
+  height: 400px;
+  margin: 0px auto 10px auto;
+  border-radius: 10px;
+  padding: 40px 60px 40px 60px;
+}
+
+#logo img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 7%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tit1 {
+  margin-top:0px;
+}
+
+#tit1 img {
+  width: 30%;
+  margin: 0 62%;
+}
+
+div#tit1, div#descrizioni, div#bottoni {
+  width: 75%;
+  margin: 40px auto 10px auto;
+  border-radius: 10px;
+  box-shadow: 8px 8px 20px rgba(40, 17, 91, 0.397);
+  background-color: white;
+  padding: 40px 60px 40px 60px;
+  text-align: justify;
+  line-height: 1;
+  font-size: 1.2em;
+
+}
+
+#tit1 p {
+  margin-left: 10%;
+}
+
+#descrizioni h2 {
+ height: 2%;
+ flex: 1 1 100%; 
+ box-sizing: border-box;
+ text-align: center;
+}
+
+#descrizioni {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 20px; 
+  margin-bottom: 20px; 
+}
+
+
+#profile_desc{
+  flex: 1 1 40%;
+  height: 200px;
+  box-sizing: border-box;
+  margin-top: 2%;
+  margin-left: 10%;
+}
+
+#profile_desc_text_class {
+  text-align: center;
+  flex: 1 1 20%; 
+  box-sizing: border-box;
+  margin-top: 5%;
+}
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -15%); 
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 10; 
+}
+
+
+.circle-container {
+  position: relative;
+  display: inline-block;
+  width: 240px; 
+  height: 230px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.word {
+  position: absolute;
+  width: auto;
+  height: auto;
+  font-size: 13px;
+  transform-origin: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.word:nth-child(1) {
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%) rotate(0deg);
+}
+
+.word:nth-child(2) {
+  top: 20%;
+  left: 80%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.word:nth-child(3) {
+  top: 50%;
+  left: 90%;
+  transform: translateX(-50%) rotate(90deg);
+}
+
+.word:nth-child(4) {
+  top: 80%;
+  left: 80%;
+  transform: translateX(-50%) rotate(135deg);
+}
+
+.word:nth-child(5) {
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+}
+
+.word:nth-child(6) {
+  top: 80%;
+  left: 20%;
+  transform: translateX(-50%) rotate(225deg);
+}
+
+.word:nth-child(7) {
+  top: 50%;
+  left: 10%;
+  transform: translateX(-50%) rotate(270deg);
+}
+
+.word:nth-child(8) {
+  top: 20%;
+  left: 20%;
+  transform: translateX(-50%) rotate(315deg);
+}
+
+.word:nth-child(9) {
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%) rotate(360deg);
+}
+
+.word {
+  transform: rotate(0deg); 
+  transform-origin: center center;
+}
+
+.word:hover {
+  transform: scale(1.2) rotate(0deg); 
+}
+
+#source_desc {
+  flex: 1 1 100%; 
+  box-sizing: border-box;
+  margin-left: 10%;
+}
+
+#source_desc p {
+width: 55%;
+}
+
+#source_desc h2 {
+  margin-top: 5%;
+  margin-bottom: 7%;
+  margin-right: 10%;
+}
+
+#encoding_desc {
+  flex: 0 0 50%; 
+  box-sizing: border-box;
+  margin-left: 10%;
+}
+
+@media (max-width: 768px) {
+  #descrizioni {
+    flex-direction: column; 
+  }
+
+  #profile_desc, #profile_desc_text_class, #encoding_desc, #source_desc {
+    flex: 1 1 100%; 
+  }
+}
+
+#tit1 h2, #tit1 h3 {
+  text-align: center;
+  line-height: 0.5;
+}
+
+#tit1 h3 {
+  margin-bottom: 3%;
+}
+
+#tit1 p:first-of-type {
+  text-align: center;
+  margin-bottom: 10%;
+  margin-left: 0px;
+}
+
+.main-title {
+  font-weight: bold;
+  font-size: 13px;
+  color: #383232;
+
+}
+
+.sub-title {
+  font-style: italic;
+  color: #666; 
+  font-size: 13px;
+}
+
+#descrizioni i {
+  color: #4b1a13;
+  text-decoration: underline;
+  margin-top: 15px;
+}
+
+
+/*STILE TESTI*/
+
+.column-pair {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; 
+  gap: 20px;
+  margin-bottom: 2%;
+}
+
+.left-column, .right-column {
+  flex: 1 1 48%; 
+  box-sizing: border-box; 
+  text-align: justify; 
+  line-height: 1.5;
+  word-wrap: break-word; 
+}
+
+
+/* Colonna sinistra */
+.left-column {
+   width: 100%; 
+   float: left;
+}
+
+/* Colonna destra */
+.right-column {
+  width: 100%; 
+  float: right;
+}
+
+#letteratura_e_storia .column-pair .right-column:first-of-type {
+  margin-bottom: 7%;
+  margin-left: 50%; 
+}
+
+    .note-ref {
+        color: blue;
+        text-decoration: underline;
+        cursor: pointer;
+        font-size: 0.9em;
+      }
+
+      .popup {
+        display: none;
+        position: absolute;
+        background-color: #ffffff; 
+        border: 1px solid #4a90e2;
+        padding: 10px 15px; 
+        font-size: 1em;
+        text-align: left;
+        width: 220px; 
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+        border-radius: 8px; 
+        color: #333; 
+    }
+      .note-ref:hover + .note-popup {
+        display: block;
+      }
+
+      #bottoni button {
+        margin: 5px;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 5px;
+       
+        color: white;
+        font-weight: bold;
+        font-family: 'Arial', sans-serif;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      #bottoni h2, #bottoni p {
+        text-align: center;
+      }
+      
+      #bottoni h2 {
+        margin-top: 0px;
+        margin-bottom:10px;
+      }
+
+      #bottoni p {
+        margin-bottom: 7%;
+      }
+      
+      .cyan{background-color: deepskyblue;}
+      .cyan:hover{background-color: cyan;}
+      
+      .gray { background-color: rgb(76, 74, 74);}
+      .gray:hover { background-color: lightgray}
+
+      .orange { background-color: rgb(187, 81, 0);}
+      .orange:hover { background-color: rgb(212, 142, 57)}
+      
+      .yellow { background-color: #FFD700; }
+      .yellow:hover { background-color: #E6C200; }
+      
+      .DarkOliveGreen { background-color: #556B2F; }
+      .DarkOliveGreen:hover { background-color: #485D27; }
+      
+      .DeepPink { background-color: #FF1493; }
+      .DeepPink:hover { background-color: #E01383; }
+
+      .Pink { background-color: #fb82c3; }
+      .Pink:hover { background-color: #ff3aa7; }
+      
+      .purple { background-color: #800080; }
+      .purple:hover { background-color: #6A006A; }
+
+      .brown { background-color: #6f2c02; }
+      .brown:hover { background-color: #522102; }
+      
+      .DarkOrange { background-color: #FF8C00; }
+      .DarkOrange:hover { background-color: #E67B00; }
+      
+      .LawnGreen { background-color: #7CFC00; }
+      .LawnGreen:hover { background-color: #6FE200; }
+      
+      .red { background-color: #FF6347; }
+      .red:hover { background-color: #E55641; }
+      
+      .DarkGreen { background-color: #006400; }
+      .DarkGreen:hover { background-color: #005700; }
+      
+      .DarkSlateBlue { background-color: #483D8B; }
+      .DarkSlateBlue:hover { background-color: #3E3477; }
+      
+      .DarkSalmon { background-color: #E9967A; }
+      .DarkSalmon:hover { background-color: #CC8467; }
+
+      .Salmon { background-color: #f36333; }
+      .Salmon:hover { background-color: #a1380f; }
+      
+      .Maroon { background-color: #800000; }
+      .Maroon:hover { background-color: #6A0000; }
+
+      .DarkCyan {
+        background-color: #008B8B !important;
+        }
+        .DarkCyan:hover {
+        background-color: #007575 !important;
+    }
+
+      .Blue { background-color: #2002cb;}
+      .Blue:hover {background-color: #7f6de6;}
+
+      /* Stile per i numeri */
+a.popup-trigger {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Stile per il pop-up (lo span) */
+span.popup {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px 15px 15px 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+
+.active-background {
+  background-color: rgb(212, 194, 58); 
+}
+
+.image {
+   margin-top: 7%;
+}
+
+.image img {
+  position: relative;  
+  z-index: 1;          /* L'immagine ha un z-index inferiore */
+}
+
+.image:hover img{
+  cursor: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%3E%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%228%22%20fill%3D%22red%22%2F%3E%3C%2Fsvg%3E'), auto;
+  box-shadow: 4px 4px 15px rgb(212, 194, 58, 0.7);
+}
+
+/* Stile per le aree cliccabili */
+area {
+  position: absolute;  
+  z-index: 20;         /* Le aree sono sopra l'immagine */
+  transition: background-color 3s ease; 
+  opacity: 0;
+}
+
+
+#all_articles, #all_bibliografia, #all_notizie {
+  width: 85%;
+  margin: 40px auto 30px auto;
+  border-radius: 10px;
+  padding: 40px 60px 40px 60px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+
+.all {
+  background-color: #dfdbf5;
+  box-shadow: 0px 4px 15px rgba(71, 61, 139, 0.7);
+  margin-bottom: 20px;
+  width: 87%;
+  border-radius: 10px;
+  padding: 40px 60px 40px 60px;
+}
+
+#all_articles {
+  margin-top: 1%;
+}
+
+#all_articles > *, #all_bibliografia > *, #all_notizie > * {
+  margin-bottom: 20px; /* Distanza tra gli elementi */
+  font-family: 'Open Sans';
+  font-size: 13.5px;
+}
+
+.left-column p, .right-column p {
+  text-align: justify; 
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+
+#all_articles .image img,
+#all_bibliografia .image img,
+#all_notizie .image img {
+  width: 30%; 
+  height: auto; 
+  max-width: 100%; 
+  margin: 10px 0; 
+}
+
+.all .text h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+
+
+
+
+      

@@ -1,0 +1,1094 @@
+<!DOCTYPE HTML>
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="progettostile.css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script><script type="text/javascript" src="progetto.js"></script><title>Progetto di Codifica di Testi</title>
+   </head>
+   <body>
+      <div id="logo"><img src="logo2.png" alt="La_Rassegna_Settimanale"></div>
+      <div id="tit1">
+         <h2>LA RASSEGNA SETTIMANALE</h2>
+         <h3>DI POLITICA, SCIENZE, LETTERE ED ARTI Vol.2
+            Num.4
+            </h3>
+         <p><b>Fondata da: </b>Sidney Sonnino, Leopoldo Franchetti e Pasquale Villari</p>
+         <p>Edizione digitale a carattere didattico -  
+            Dicembre 2024 
+            <br>Responsabile di codifica - Giorgia Migliorini<br>Referente universitario di coordinazione - Angelo Mario Del Grosso<br></p><img src="Logo-UNIIPI-nero.png" alt="Unipi"></div>
+      <div id="descrizioni">
+         <h2>Descrizione del progetto:</h2>
+         <div id="profile_desc">
+            <p>
+               Il documento contiene la codifica di alcune sezioni testuali di vario genere
+               dalla 'Rivista Settimanale', fondata nel 1878 per aprire un campo nel quale possano
+               essere discusse e studiate le questioni principali di ordine politico e sociale
+               che interessavano l’Italia.
+               </p>
+         </div>
+         <div id="profile_desc_text_class">
+            <p>
+               <div class="circle-container">
+                  <div class="center-text"><b>Parole chiave:</b></div>
+                  <div class="word">
+                     <p>politica</p>
+                  </div>
+                  <div class="word">
+                     <p>economia</p>
+                  </div>
+                  <div class="word">
+                     <p>scienza</p>
+                  </div>
+                  <div class="word">
+                     <p>letteratura</p>
+                  </div>
+                  <div class="word">
+                     <p>arte</p>
+                  </div>
+                  <div class="word">
+                     <p>cultura</p>
+                  </div>
+                  <div class="word">
+                     <p>Italia</p>
+                  </div>
+                  <div class="word">
+                     <p>Italia meridionale</p>
+                  </div>
+               </div>
+            </p>
+         </div>
+         <div id="encoding_desc">La creazione del documento digitale è funzionale alla codifica di quattro testi tratti
+            dalla 'Rivista Settimanale'. I segmenti testuali di interesse corrispondono a due
+            articoli, due trafiletti bibliografici e due dalla sezioni 'Notizie'.<br>I titoli sono rispettivamente:<br>LE VACANZE DEL PARLAMENTO E LA POLITICA INTERNA<br>PARASSITISMO LETTERARIO<br>LETTERATURA E STORIA<br>LIBRI PEI FANCIULLI<br>NOTIZIE 
+            <br><p>
+               <p><span class="zone" id="">I segni di punteggiatura di natura particolare o ambigua sono stati codificati tramite
+                     il loro punto di codice corrispondente: i.e. puntini di
+                     sospensione, apostrofi, trattini lunghi, parentesi tonde. Per ciò che concerne i segni
+                     convenzionali di punteggiatura: la codifica ha 
+                     esplicitato i punti di full stop tramite elemento <b>s</b> e i quotation marks tramite apposito tag <b>quote</b>.</span></p>
+               <p><span class="zone" id="">La codifica ha esplicitato errori ortografici, di accentuazione e di punteggiatura,
+                     grazie a tag come <b>sic</b> e <b>corr</b>.
+                     Sono state anche mostrate alternative di codifica, grazie al tag <b>choice</b>, nei casi di termini o espressioni arcaici, dialettali o in disuso.</span></p>
+            </p>
+         </div>
+         <div id="source_desc">
+            <h2>Descrizione della fonte:</h2><i>Sulla Rassegna</i><p><b>Titolo: </b>La rassegna settimanale di politica, scienze, lettere ed arti<br><p><b>Pubblicato da: </b>Casa Editrice Barbèra</p>
+               <p><b>Luogo di pubblicazione: </b>Roma</p>
+               <p><b>Data di pubblicazione: </b>1878</p>
+            </p>
+            <p><b>Articoli selezionati: </b><br><br><span class="main-title">LE VACANZE DEL PARLAMENTO E LA POLITICA INTERNA.</span><br><br><span class="main-title">PARASSITISMO LETTERARIO</span><br><br><span class="main-title">BIBLIOGRAFIA</span><br><span class="sub-title">LETTERATURA E STORIA</span><br><span class="sub-title">LIBRI PEI FANCIULLI</span><br><br><span class="main-title">NOTIZIE</span><br></p>
+            <p><i>Sul Volume</i><p><b>Volume: </b>2</p>
+               <p><b>Issue: </b>4</p>
+               <p><b>Data di pubblicazione: </b>28 Luglio 1878</p>
+               <p><b>Pagine: </b>53-68</p>
+               <p><b>Luogo di pubblicazione: </b>Firenze</p>
+            </p>
+            <p>L’identità degli autori non è specificata. «Pochissimi erano gli articoli firmati»
+               dice in merito
+               Giustina Manica, aggiungendo che la rivista si avvicinava infatti più alla natura
+               di un foglio di programma politico.</p>
+         </div>
+      </div>
+      <div id="bottoni">
+         <h2>Fenomeni Notevoli</h2>
+         <p>Clicca sui bottoni ed evidenzia gli elementi di codifica che più ti interessano</p><button id="persone" class="red">Persone</button><button id="personaggi" class="yellow">Personaggi</button><button id="Luoghi_countries" class="DeepPink">Paesi e Regioni</button><button id="Luoghi_settlements" class="Pink">Città e Villaggi</button><button id="Luoghi_n" class="purple">Luoghi naturali</button><button id="ref_bibl" class="orange">Referenze bibliografiche</button><button id="CasaEd" class="DarkOrange">Casa editrice</button><button id="Date" class="LawnGreen">Date</button><button id="sic" class="DarkGreen">Errori e correzioni</button><button id="regolarizzazioni" class="cyan">Originali e Regolarizzate</button><button id="literary_usage" class="Blue">Licenze letterarie</button><button id="testo_lingua" class="brown">Testo in lingua straniera</button><button id="citazioni" class="DarkSalmon">Citazioni</button><button id="quotes" class="Salmon">Quotes</button><button id="org" class="Maroon">Organizzazioni</button><button id="epithet_rolenames" class="DarkCyan">Epiteti e Apposizioni</button></div>
+      <div id="all_articles">
+         <div id="all_primoarticolo" class="all">
+            <div id="testo_primoarticolo" class="text">
+               <h2>
+                  
+                  LE VACANZE DEL PARLAMENTO
+                   
+                  E LA POLITICA INTERNA.
+                  </h2>
+               <for-each select="tei:body/tei:div[@type='page']">
+                  <div class="column-pair">
+                     <div class="left-column">
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo1_brano1">
+                              
+                              <br>L’<span class="Luoghi_countries">Italia</span> sta facendo da alcuni mesi lo sperimento di un
+                              <br>indirizzo di <span class="org"><span class="sic">governo</span> <span class="correzioni" style="display:none;"><b>Governo</b></span></span> a cui forse converrebbe il nome di
+                              <br>politica contemplativa ed ascetica.
+                              
+                               
+                              Pauroso di essere colto
+                              <br>in peccato dagli amici suoi, il <span class="org">Ministero</span> si trova alle prese
+                              <br>ad ogni <span class="regolarizzazioni">piè</span><span class="regolarizzate" style="display:none;"><b>piede</b></span> sospinto con un caso di coscienza; ripete a <span class="sic">sè</span> <span class="correzioni" style="display:none;"><b>sé</b></span>
+                              <span class="popup" id="popup_note1">Espressione: ad ogni piè. Spiegazione: A ogni passo | continuamente | ripetutamente<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note1">[1]</a>                                  
+                              <br>stesso da <span class="regolarizzazioni">mane</span><span class="regolarizzate" style="display:none;"><b>mattina</b></span> a sera il <span class="testo_lingua"><i>non inducas in tentationem</i></span>; ad ogni
+                              <span class="popup" id="popup_note2">Espressione: non inducas in tentationem. Traduzione: non abbandonarci alla tentazione<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note2">[2]</a> 
+                              <br>questione che gli si venga affacciando, mette il maggiore
+                              <br>impegno nello eliminare l’iniziativa propria e il proprio
+                              <br>volere.
+                              
+                              
+                              Si direbbe che i nostri uomini di <span class="org">Stato</span> abbiano il
+                              <span class="popup" id="popup_note3">Il pronome 'si' è impiegato in funzione di un soggetto indefinito 'noi' <br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note3">[3]</a>
+                              <br>proponimento di ringiovanire la formula prediletta <span class="regolarizzazioni">da’</span><span class="regolarizzate" style="display:none;"><b>dai</b></span> vec­-
+                              <br>chi dottrinari, <i>il miglior governo è quello che governa meno</i>;
+                              <br>e si crederebbe del pari che la politica ministeriale di que­-
+                              <span class="popup" id="popup_note3">Il pronome 'si' è impiegato in funzione di un soggetto indefinito 'noi' <br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note3">[4]</a> 
+                              <span class="popup" id="popup_note6">Espressione: del pari. Spiegazione: ugualmente<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note6">[5]</a>  
+                              <br>sti giorni collochi il suo ideale più elevato nell’abdicazione
+                              <br>di ogni responsabilità.
+                              
+                              </span></p>
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo2_brano1">
+                              
+                              <br>Di questo programma negativo offrono la prova più
+                              <br>evidente le inchieste di cui il <span class="org">Ministero</span> fece proposta nella
+                              <br>sessione parlamentare <span class="sic">testé</span> <span class="correzioni" style="display:none;"><b>testè</b></span> prorogata.
+                              
+                              <span class="popup" id="popup_note7">Espressione: testé. Spiegazione: poco fa<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note7">[6]</a> 
+                              
+                              Così per le domande
+                              <br>di aiuti che furon rivolte al <span class="org">Governo</span> dalla città di <span class="Luoghi_settlements">Firenze</span>,
+                              <br>come per l’assetto futuro del servizio ferroviario, l’azione
+                              <br>governativa non ebbe altra cura <span class="sic">ed</span> <span class="correzioni" style="display:none;"><b>e</b></span> altra meta che quella
+                              <br>di eliminare <span class="sic">sè</span> <span class="correzioni" style="display:none;"><b>sé</b></span> stessa.
+                              
+                              
+                              Studiare da <span class="sic">sè</span> <span class="correzioni" style="display:none;"><b>sé</b></span> il <span class="org">partito</span> migliore,
+                              <br>investigare i fatti da cui hanno origine questi difficili pro­-
+                              <br>blemi, ideare e proporre una soluzione, non rifuggire dalle
+                              <br>lotte e dai pericoli di una politica coraggiosa e risoluta,
+                              <br>tutto questo parve ardimento eccessivo o ingerenza esube­-
+                              <span class="popup" id="popup_note8">'tutto questo' si riferisce alle coordinate delle righe 23-26<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note8">[7]</a>
+                              <br>rante per un’amministrazione liberale.
+                              
+                              
+                              E per poco
+                              <br>non si credette di compiere un atto di patriottismo inaugurando
+                              <span class="popup" id="popup_note3">Il pronome 'si' è impiegato in funzione di un soggetto indefinito 'noi' <br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note3">[8]</a>
+                              <br>un sistema che esautora il potere esecutivo e introduce
+                              <br>nell’amministrazione della cosa pubblica uno spostamento
+                              <span class="popup" id="popup_note9">Espressione: amministrazione della cosa pubblica. Spiegazione: pubblica aministrazione|gestione
+                                 dei beni pubblici<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note9">[9]</a>                
+                              <br>di responsabilità, non utile, anzi veramente pernicioso.
+                              
+                              </span></p>
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo3_brano1">
+                              
+                              <br>Di questo sistema non <span class="regolarizzazioni">è</span><span class="regolarizzate" style="display:none;"><b>c’è</b></span> chi non veda la fallacia <span class="sic">ed</span><span class="correzioni" style="display:none;"><b> e</b></span>
+                              <br>il danno.
+                              
+                              
+                              Ognuno comprende che sotto queste apparenze
+                              <br>di ossequio illimitato al <span class="org"><span class="sic">parlamento,</span> <span class="correzioni" style="display:none;"><b>Parlamento,</b></span></span> si nasconde una in­-
+                              <br>decisione di propositi che non può all’ultimo non pertur­-
+                              <br>bare lo spirito pubblico; che l’opera moderatrice e gli uf­-
+                              <br>fici del <span class="org">Governo</span> sono in tal modo fraintesi o soppressi;
+                              <br>che il maggiore <span class="regolarizzazioni">de’</span><span class="regolarizzate" style="display:none;"><b>dei</b></span> pericoli onde possa essere minacciato
+                              <span class="popup" id="popup_note10">Espressione: onde. Spiegazione: da cui|da dove<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note10">[10]</a> 
+                              <br>un paese che si governa a regime parlamentare, la tirannia
+                              <span class="popup" id="popup_note4">Il pronome 'si' è impiegato con funzione impersonale<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note4">[11]</a>
+                              <br>delle maggioranze, si va disegnando in tal <span class="regolarizzazioni">guisa</span> con indizi
+                              <span class="popup" id="popup_note11">Espressione: guisa. Spiegazione: forma | maniera | modo<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note11">[12]</a>              
+                              <br>sempre più manifesti.
+                              
+                              
+                              Non è più il <span class="org">Governo</span> che deve tem­-
+                              <br>perare <span class="sic">ed</span> <span class="correzioni" style="display:none;"><b>e</b></span> indirizzare il <span class="org">partito</span> da cui esso emana; ma è
+                              <span class="popup" id="popup_note12">il verbo 'emanare' è impiegato col significato di 'formare|creare|originare'<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note12">[13]</a>
+                              <br>l’azione di una parte politica, o di coloro che si fanno
+                              <br>innanzi in suo nome, l’azione necessariamente tumultuaria,
+                              <br>incomposta, non frenata da coscienza di responsabilità,
+                              <br>che prevale sul <span class="org">Governo</span>, lo fa oscillante o lo trascina a
+                              <br>seconda <span class="regolarizzazioni">de’</span><span class="regolarizzate" style="display:none;"><b>dei</b></span> casi, e sempre gli toglie continuità ed efficacia.
+                              
+                              
+                              <br>I provvidi equilibri si rompono; le forme così legittima-
+                              <br>mente apprezzate se s’interpretano a dovere, si convertono
+                              <span class="popup" id="popup_note4">Il pronome 'si' è impiegato con funzione impersonale<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note4">[14]</a>
+                              <br>in una <span class="regolarizzazioni">guarentigia</span> <span class="regolarizzate" style="display:none;"><b>garanzia</b></span> bugiarda, e valgono soltanto a nascon­-
+                              <br>dere la fossa in cui le libertà pubbliche e i buoni ordini
+                              <br>di <span class="org"><span class="sic">governo</span> <span class="correzioni" style="display:none;"><b>Governo</b></span></span> finiscono per precipitare.
+                              
+                              </span></p>
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo4_brano1">
+                              
+                              <br>Fatte silenziose ora le aule parlamentari, questo indi­-
+                              <br>rizzo alimenta nuove e più intense trepidanze nell’animo
+                              <br>di coloro che guardano più in là dell’ora presente.
+                              
+                               
+                              È cer-
+                              <br>tamente deplorabile che le sorti di <span class="Luoghi_settlements">Firenze</span> <span class="regolarizzazioni">siansi</span> ancor
+                              <span class="popup" id="popup_note13">Espressione: siansi. Spiegazione: siano<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note13">[15]</a>
+                              
+                              <span class="popup" id="popup_note5">Il pronome 'si' è impiegato con funzione pleonastica<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note5">[16]</a>
+                              <br>più abbuiate per le dubbiezze del <span class="org">Ministero</span> e la sua man­-
+                              <br>canza di energia nel risolvere la questione in un modo o
+                              <br>in un altro.
+                              
+                               
+                              È doloroso ricordo la discussione pregiudicata
+                               <br>della legge ferroviaria.
+                              
+                              
+                               Ma ben più pericolose per il paese
+                              <br>appariscono le agitazioni che serpeggiano adesso in tutta
+                              <br>l’<span class="Luoghi_countries">Italia</span>, e sembrano rinfocolarsi <span class="regolarizzazioni">pel</span><span class="regolarizzate" style="display:none;"><b>per il</b></span> programma di com­- 
+                              <br>piacente astensione o per l’indifferentismo con cui il <span class="org">Go-     
+                                 <br>verno</span>verno accenna ad accoglierle.
+                              
+                              
+                              E non sapremmo abbastanza
+                              <br>dolerci che il <span class="org">sindacato</span> rappresentativo, il quale per noi ha
+                              <br>valore di una <span class="regolarizzazioni">guarentigia</span> <span class="regolarizzate" style="display:none;"><b>garanzia</b></span> preziosa, abbia a rimanere in
+                              <br>questo momento sospeso.
+                              
+                                            
+                              </span></p>
+                     </div>
+                     <div class="right-column">
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo5_brano1">
+                              
+                              <br>Queste commozioni a cui assistiamo, queste manifesta­-
+                              <br>zioni, legittime in <span class="sic">sè</span> <span class="correzioni" style="display:none;"><b>sé</b></span> e ispirate bensì a simpatie patriotti­-
+                              <br>che, ma non misurate <span class="sic">nè</span> <span class="correzioni" style="display:none;"><b>né</b></span> opportune, dicono troppo chiara­-
+                              <br>mente che gli stessi amici del <span class="org">Governo</span> ripongono in lui una
+                              <span class="popup" id="popup_note14">'lui' fa riferimento al 'Governo', qui personificato<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note14">[19]</a>
+                              <br>fiducia molto limitata e sentono il bisogno di forzargli la
+                              <br>mano.
+                              
+                               Si vede bene che la breve esperienza ha maturato i
+                              <span class="popup" id="popup_note4">Il pronome 'si' è impiegato con funzione impersonale<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note4">[20]</a>
+                              <br>suoi frutti; e a <span class="org"><span class="regolarizzazioni">Camera</span> <span class="regolarizzate" style="display:none;"><b>Camera dei Deputati</b></span></span> chiusa, i <span class="org">Comizi</span> popolari si credono
+                              <br>legittimati a formulare un nuovo programma di politica
+                              <br>estera senza darsi pensiero della sua esecuzione.
+                              
+                              </span></p>
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo6_brano1">
+                              
+                              <br>Il <span class="org">Governo</span> si è mostrato non curante delle sue prero­-
+                              <br>gative di fronte al <span class="org">Parlamento</span>, ha mostrato di non avere
+                              <br>idee proprie, o almeno di non aver il coraggio della re­-
+                              <br>sponsabilità di metterle <span class="sic">ad</span> <span class="correzioni" style="display:none;"><b>a</b></span> esecuzione, tanto all’interno
+                              <br>quanto all’estero; ha ripetuto riguardo alla maggioranza, il
+                              <br>famoso detto:<span class="quotes">« Sono il loro capo ; dunque debbo seguirli<span class="sic">.</span> » <span class="correzioni" style="display:none;"><b>.</b></span></span>
+                              
+                              
+                              <br>La sua autorità, il suo prestigio ne hanno sofferto, ed è
+                              <br>naturale che la piazza tenti e speri di dirigere la politica
+                              <span class="popup" id="popup_note26">L’impresa fa riferimento al tentativo di annessione delle Marche e dell’Umbria al
+                                 Regno unito d’Italia, in construzione<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note26">[21]</a>
+                              <br>del paese con schiamazzi e concioni e proteste.
+                              <span class="popup" id="popup_note15">Espressione: concione. Spiegazione: arringa pubblica<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note15">[22]</a>
+                               
+                              </span></p>
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo7_brano1">
+                              
+                              <br>Ma la <span class="regolarizzazioni">china</span> è pericolosa; e <span class="regolarizzazioni">sovra</span> <span class="regolarizzate" style="display:none;"><b>sopra</b></span> di essa potrebbero
+                              <span class="popup" id="popup_note16">Espressione: china. Spiegazione: pendio|superficie in pendenza<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note16">[23]</a>
+                              <br>sdrucciolare le <span class="org">istituzioni</span> e la stessa salvezza del paese.
+                              
+                               
+                              Noi
+                              <br>abbiamo rimproverato al <span class="org">Ministero</span> di non aver sostenuto
+                              <br>più dignitosamente <span class="regolarizzazioni">gl’</span><span class="regolarizzate" style="display:none;"><b>gli</b></span> interessi dell’<span class="Luoghi_countries">Italia</span> al <span class="org">Congresso</span>,
+                              <br>combattendo con energia i privilegi accordati all’<span class="Luoghi_countries">Austria</span>
+                              <br>sull’<span class="Luoghi_n">Adriatico</span>, a danno del <span class="Luoghi_countries">Montenegro</span>, e appoggiando i
+                              <br>diritti dei <span class="persone">Greci</span>, e delle altre popolazioni della <span class="Luoghi_n"><span class="Luoghi_n">penisola</span> bal­-
+                                 <br>canica.</span> 
+                              
+                               
+                              <span class="sic">Nè</span> <span class="correzioni" style="display:none;"><b>Né</b></span> l’<span class="Luoghi_countries">Italia</span> doveva, di fronte <span class="regolarizzazioni">agl’</span><span class="regolarizzate" style="display:none;"><b>agli </b></span>ingrandimenti del­-
+                              <br>l’<span class="Luoghi_countries">Austria</span>, tacere affatto dei diritti dei suoi figli ancora op­-
+                              <br>pressi dallo straniero, ratificando col suo silenzio la loro
+                              <br>servitù.
+                              
+                               
+                              Meglio era non intervenire al <span class="org">Congresso</span>, che far 
+                              <br>la parte che ci abbiamo fatto.
+                              
+                               
+                              Ma non per questo potremmo
+                              <br>ammettere che <span class="regolarizzazioni">d’</span><span class="regolarizzate" style="display:none;"><b>da</b></span>ora in poi la politica estera dell’<span class="Luoghi_countries">Italia</span> debba 
+                              <br>essere determinata dai <span class="testo_lingua"><i>meetings</i></span> e dai tumulti della piazza.
+                              <span class="popup" id="popup_note17">piazza fa riferimento al pubblico, al popolo, richiamando il concetto di piazza come
+                                 luogo di organizzazione, dibattito e contestazione<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note17">[24]</a>
+                               
+                              </span></p>
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo8_brano1">
+                              
+                              <br>Mentre alcuni <span class="org">giornali</span> ufficiosi dichiarano che il <span class="org">Go-
+                                 <br>verno</span> <span class="regolarizzazioni">riprova</span> <span class="regolarizzate" style="display:none;"><b>disapprova</b></span> altamente ogni agitazione che possa turbare
+                              <br>la cordialità delle nostre relazioni con le altre <span class="org">potenze</span>,
+                              <br>altri si compiacciono riportare notizie di missioni speciali
+                              <br>a <span class="Luoghi_settlements">Tunisi</span>, di trattati con la <span class="Luoghi_countries">Grecia</span> <span class="regolarizzazioni">ec.</span><span class="regolarizzate" style="display:none;"><b>eccetera</b></span>, per lusingare il
+                              <br>pubblico con vane speranze che, dietro alla politica estera
+                              <br>conosciuta del <span class="org">Gabinetto</span>, ve ne sia un’altra più avventurosa,
+                              <br>la quale possa procurare all’<span class="Luoghi_countries">Italia</span> ingrandimenti in altre di­-
+                              <br>rezioni che non quella delle <span class="Luoghi_n">province</span> soggette allo straniero.
+                              
+                              </span></p>
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo9_brano1">
+                               <br>Tutto ciò sembrerebbe fanciullesco, se <span class="sic">pur troppo</span> <span class="correzioni" style="display:none;"><b>purtroppo</b></span> non
+                              <br>alimentasse nel paese le agitazioni intempestive che ora
+                              <br>deploriamo, e le quali non servono che a rendere difficili
+                              <br>le nostre relazioni internazionali, senza riparare in alcun
+                              <br>modo agli sbagli che il <span class="org">Ministero</span> possa aver commesso nel
+                              <br><span class="org">Congresso</span> o fuori.
+                              
+                              </span></p>
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo10_brano1">
+                              
+                              <br><span class="sic">Ed</span> <span class="correzioni" style="display:none;"><b>E</b></span> ora urge che il <span class="org">Governo</span> manifesti apertamente e re-
+                              <br>cisamente <span class="sic">qual’</span> <span class="correzioni" style="display:none;"><b>qual</b></span> è la sua politica nel prossimo avvenire, e dove
+                              <br>intende condurci, e dichiari senza reticenze che un indirizzo
+                              <br>diverso non sarebbe conforme <span class="regolarizzazioni">agl’</span><span class="regolarizzate" style="display:none;"><b>agli</b></span>interessi della <span class="Luoghi_countries">patria</span>.
+                                           
+                              </span></p>
+                     </div>
+                  </div>
+               </for-each>
+            </div>
+            <div id="img_primoarticolo" class="image"><img class="small" src="le_vacanze_del_parlamento.png" usemap="#pagina53"><map name="pagina53"><area id="tit_primobrano" coords="42,226,557,264" style="cursor: pointer" shape="rect"><area id="subtit_primobrano" coords="42,267,555,287" style="cursor: pointer" shape="rect"><area id="paragrafo1_brano1" coords="44,294,551,592" style="cursor: pointer" shape="rect"><area id="paragrafo2_brano1" coords="45,599,552,948" style="cursor: pointer" shape="rect"><area id="paragrafo3_brano1" coords="45,950,552,1411" style="cursor: pointer" shape="rect"><area id="paragrafo4_brano1" coords="44,1416,547,1570" style="cursor: pointer" shape="rect"><area id="paragrafo4_brano1" coords="569,242,1075,410" style="cursor: pointer" shape="rect"><area id="paragrafo5_brano1" coords="570,421,1080,612" style="cursor: pointer" shape="rect"><area id="paragrafo6_brano1" coords="570,616,1078,810" style="cursor: pointer" shape="rect"><area id="paragrafo7_brano1" coords="571,815,1077,1119" style="cursor: pointer" shape="rect"><area id="paragrafo8_brano1" coords="569,1125,1078,1317" style="cursor: pointer" shape="rect"><area id="paragrafo9_brano1" coords="568,1320,1077,1440" style="cursor: pointer" shape="rect"><area id="paragrafo10_brano1" coords="567,1447,1077,1541" style="cursor: pointer" shape="rect"></map></div>
+         </div>
+         <div id="all_secondoarticolo" class="all">
+            <div id="testo_secondoarticolo" class="text">
+               <h2>
+                  IL PARASSITISMO LETTERARIO
+                  </h2>
+               <for-each select="tei:body/tei:div[@type='page']">
+                  <div class="column-pair">
+                     <div class="left-column">
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo1_brano2">
+                              
+                              <br>     
+                              L’<span class="epithet_rolenames">editore</span>
+                              <span class="epithet_rolenames">
+                                 <span class="regolarizzazioni">sig.</span>
+                                 <span class="regolarizzate" style="display:none;"><b>signor</b></span>
+                                 </span>
+                              <span class="persone"><a href="https://www.treccani.it/enciclopedia/emilio-treves_(Dizionario-Biografico)/">
+                                    Emilio
+                                    Treves
+                                    </a></span> 
+                              ci manda una lettera a
+                              <br>stampa nella quale, a proposito di una sua vertenza con
+                              <br>un <span class="org">giornale <span class="Luoghi_countries">napoletano</span></span> che ha riprodotto arbitrariamente
+                              <br>alcuni articoli <span class="regolarizzazioni">dell’</span><span class="regolarizzate" style="display:none;"><b>della</b></span><span class="org"><a href="https://it.wikipedia.org/wiki/L%27Illustrazione_Italiana">Illustrazione italiana</a></span>, si lamenta di que-­
+                              <br>sto parassitismo della contraffazione, che continua a man
+                              <br>salva nell’interno del <span class="regolarizzazioni"><span class="org"><a href="">Regno</a></span></span><span class="regolarizzate" style="display:none;"><b> d’Italia</b></span>, e spesso col favore dei <span class="org">tribunali</span>
+                              <span class="popup" id="popup_note18">Espressione: a man salva. Spiegazione: senza impedimenti<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note18">[25]</a>
+                              <br>indulgenti.
+                              
+                              
+                              L’<span class="epithet_rolenames">editore</span> <span class="Luoghi_countries">milanese</span> conforta le sue asserzioni con
+                              <br>
+                              tristissimi esempi anche prossimi, ai quali per nostro conto
+                              <br>potremmo aggiungerne altri che illustrano i noti versi <span class="quotes"><span class="testo_lingua"><i>sic
+                                       <br>vos non vobis</i></span></span>.
+                              <span class="popup" id="popup_note19">Espressione: sic vos non vobis. Traduzione: così voi non per voi<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note19">[27]</a>
+                              
+                              
+                              
+                               E dopo aver notato che la riproduzione fatta
+                              <br>in <span class="regolarizzazioni">onta</span> alle espresse dichiarazioni di proprietà letteraria
+                              <span class="popup" id="popup_note20">Spiegazione: in onta. Espressione: malgrado | nonostante<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note20">[29]</a>
+                              <br>riservata, è una contraffazione in piena regola, egli invoca
+                              <br>il giudizio della <span class="org">stampa</span>, come ha già invocato quello dei
+                              <br><span class="org">tribunali</span>.
+                              
+                              </span></p>
+                     </div>
+                     <div class="right-column">
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo2_brano2">
+                              
+                              <br>Questo reato della contraffazione, contro il quale la nostra
+                              <br>legge difettosissima non sa tutelare <span class="regolarizzazioni">gl’</span><span class="regolarizzate" style="display:none;"><b>gli</b></span>interessati, mentre
+                              <br>la <span class="org">magistratura</span> mostrasi sempre singolarmente tenera per
+                              <br>i contravventori, è un male grandissimo che, come nota il
+                              <br><span class="epithet_rolenames">signor</span><span class="persone"><a href="https://www.treccani.it/enciclopedia/emilio-treves_(Dizionario-Biografico)/"> Treves</a></span>, colpisce tutta la vita letteraria del paese.
+                              
+                              
+                              <br><span class="quotes">« Con questo pericolo permanente, come può un editore
+                                 <br>pagare lautamente un autore? Come può un <span class="org">giornale</span> o una
+                                 <br><span class="org">rivista</span> stipendiare degli autori che richiamino il pubblico, 
+                                 <br>se altri riproducono gli articoli medesimi senza tirar fuori
+                                 <br>un soldo? Per l’autore non c’è salvezza: o è mediocre, e   
+                                 <br>guadagna poco; o è insigne, e sarà derubato<span class="sic">.</span> » <span class="correzioni" style="display:none;"><b>.</b></span>
+                                 </span>
+                              
+                              
+                              Bisogne-
+                              <br>rebbe pertanto che i magistrati, se è possibile, ponessero
+                              <br>mente a questo lato della questione e liberassero l’<span class="Luoghi_countries">Italia</span>
+                              <br><span class="quotes">« da questo parassitismo che nuoce a tutta la pianta let­-
+                                 <br>teraria. »</span>
+                                                
+                              </span></p>
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo3_brano2">
+                              
+                              <br>Ma, oltre alla questione giuridica, c’è pure una que­-
+                              <br>stione di rispettabilità fra giornalisti e editori; perciò lo
+                              <br>scrittore della lettera fa appello alla <span class="org">stampa</span>, e spera che
+                              <br>l’<i>Associazione della stampa</i> e la <i>Società degli uomini di let­-
+                                 <br>tere</i> che sta per sorgere a <span class="Luoghi_settlements">Milano</span>, cerchino provvedere a
+                              <br>siffatto inconveniente.
+                              
+                               E noi consentiamo pienamente con
+                              <br>lui.
+                               
+                               Intanto per cominciare a tenere un po’ più alto il pre­-
+                              <br>stigio della letteratura e del giornalismo, non sarebbe male
+                              <br>che gli stessi editori, che ora giustamente si lamentano,
+                              <br>tralasciassero il poco rispettoso costume di mandare ai
+                              <br><span class="org">giornale</span> <span class="regolarizzazioni">belle e</span><span class="regolarizzate" style="display:none;"><b>bell’e</b></span> fatte, anzi <span class="regolarizzazioni">belle e</span><span class="regolarizzate" style="display:none;"><b>bell’e</b></span> stampate, le rassegne
+                              <span class="popup" id="popup_note21">Espressione: bell’e. Spiegazione: indica conclusione di un’azione<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note21">[30]</a>
+                              <br>bibliografiche di opere uscite dai loro torchi.
+                              
+                              </span></p>
+                     </div>
+                  </div>
+               </for-each>
+            </div>
+            <div id="img_secondoarticolo" class="image"><img class="small" src="parassitismo_letterario__bibl1.png" usemap="#pagina64"><map name="pagina64"><area id="tit_secondobrano" coords="72,1309,556,1341" style="cursor: pointer" shape="rect"><area id="paragrafo1_brano2" coords="72,1342,554,1487" style="cursor: pointer" shape="rect"><area id="paragrafo2_brano2" coords="558,97,1046,239" style="cursor: pointer" shape="rect"><area id="paragrafo3_brano2" coords="561,241,1051,549" style="cursor: pointer" shape="rect"><area id="paragrafo4_brano2" coords="562,552,1051,798" style="cursor: pointer" shape="rect"><area id="tit_bibl1" coords="561,807,1045,841" style="cursor: pointer" shape="rect"><area id="subtit_bibl1" coords="563,843,1045,867" style="cursor: pointer" shape="rect"><area id="paragrafo1_brano3" coords="564,869,1056,908" style="cursor: pointer" shape="rect"><area id="paragrafo2_brano3" coords="566,911,1056,1233" style="cursor: pointer" shape="rect"><area id="paragrafo3_brano3" coords="566,1238,1056,1485" style="cursor: pointer" shape="rect"></map></div>
+         </div>
+      </div>
+      <div id="all_bibliografia">
+         <div id="all_terzoarticolo" class="all">
+            <div id="letteratura_e_storia" class="text">
+               <h2>
+                  LETTERATURA E STORIA.
+                  </h2>
+               <for-each select="tei:body/tei:div[@type='page']">
+                  <div class="column-pair">
+                     <div class="right-column">
+                        <p><span class="zone" id="paragrafo1_brano3">
+                              <span class="ref_bibl">
+                                 <br><span class="persone"><a href="https://www.treccani.it/enciclopedia/achille-mauri_(Dizionario-Biografico)/">Achille Mauri</a></span>.
+                                 <i>Scritti Biografici</i>, Due Volumi.
+                                 — <span class="Luoghi_settlements">Firenze</span>
+                                 <br><span class="CasaEd">Successori <span class="persone"><a href="https://www.treccani.it/enciclopedia/felice-le-monnier/">Le Monnier</a></span></span>,
+                                 <span class="Date">1878</span>.
+                                 </span>
+                              </span></p>
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo2_brano3">
+                              
+                              <br>Fra le più utili pubblicazioni del momento non esitiamo
+                              <br>a porre questa <span class="sic">Raccolta</span> <span class="correzioni" style="display:none;"><b>raccolta</b></span> degli <i>Scritti Biografici</i> del <span class="persone"><a href="https://www.treccani.it/enciclopedia/achille-mauri_(Dizionario-Biografico)/">Mauri</a></span>,
+                              <span class="popup" id="popup_note22">Espressione: Raccolta. Spiegazione: Il termine fa riferimento alla pubblicazione della
+                                 casa editrice Successori Le Monnier<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note22">[31]</a>
+                              <br>alla quale la generazione nuova specialmente, così poco dotta
+                              <br>nella storia contemporanea e così poco curiosa di saperne
+                              <br>il vero, sarebbe desiderabile che facesse lieta accoglienza.
+                              
+                              
+                              <br>Sono qui, <span class="regolarizzazioni">adunque</span><span class="regolarizzate" style="display:none;"><b>dunque</b></span>, raccolte memorie di uomini dotti e di
+                              <span class="popup" id="popup_note23">Espressione: adunque. Spiegazione: variante letteraria di dunque<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note23">[32]</a>                     
+                              <br>uomini politici, della maggior parte <span class="regolarizzazioni">de’</span><span class="regolarizzate" style="display:none;"><b>dei</b></span> quali si è reso chiaro
+                              <br>il nome negli ultimi tempi (e di altri è desiderabile non si
+                              <br>perda ogni rimembranza) e che qual più, qual meno hanno
+                              <br>avuto parte agli ultimi rivolgimenti <span class="Luoghi_countries">italiani</span>, o si trovano
+                              <br>collegati al movimento intellettuale dell’età nostra. Avremmo
+                              <br>perciò, per dar maggior omogeneità alia materia, lasciato
+                              <br>volentieri da parte le prime biografie, e cominciato addirit­-
+                              <br>tura da quella del <span class="persone"><a href="">Londonio</a></span>: e nella varietà degli scritti se
+                              <br>ne sarebbe senza dubbio avvantaggiata per tal modo l’unità
+                              <br>intrinseca dell’opera.
+                              
+                              </span></p>
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo3_brano3">
+                              
+                              <br>La raccolta non è stata <span class="regolarizzazioni">sopravegliata</span> dall’<span class="persone"><a href="https://www.treccani.it/enciclopedia/achille-mauri_(Dizionario-Biografico)/"><span class="regolarizzazioni"><span class="regolarizzazioni">A.</span></span><span class="regolarizzate" style="display:none;"><b>Autore</b></span></a></span>, ma da
+                              <span class="popup" id="popup_note25">Spiegazione: sopravegliare. Espressione: soprintendere | prestare attenzione<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note25">[33]</a>
+                              <br>altri: e fra le ragioni addotte dall’editore vi è questa, che
+                              <br>a noi pare, <span class="sic">ed</span> <span class="correzioni" style="display:none;"><b>e</b></span> anche ad altri potrà parere, singolarissima:
+                              <br>che, cioè, sarebbe stato <span class="citazioni"><span class="quotes">«poca convenienza al <span class="persone"><a href="https://www.treccani.it/enciclopedia/achille-mauri_(Dizionario-Biografico)/">Mauri</a></span> farsi
+                                    <br>editore di queste cose»</span><span class="ref_bibl">( <span class="regolarizzazioni">pag.</span> <span class="regolarizzate" style="display:none;"><b>pagina</b></span> II)</span></span>.
+                              <span class="popup" id="popup_note24">La referenza bibliografica fa riferimento all’opera sopracitata del Mauri<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note24">[34]</a>
+                              
+                              
+                              Confessiamo di non in­-
+                              <br>tendere in che sarebbe consistita la <span class="quotes">«poca convenienza»</span> di
+                              <br>un autore che giunto in là <span class="regolarizzazioni">cogli</span><span class="regolarizzate" style="display:none;"><b>con gli</b></span> anni, e quando il suo nome
+                              <br>è già noto e riverito, raccoglie amorosamente, coordina e
+                              <br>corregge le cose sue ripubblicandole.
+                              
+                              
+                              Noi avremmo invece
+                              <br>preferito che l’<span class="persone"><a href="https://www.treccani.it/enciclopedia/achille-mauri_(Dizionario-Biografico)/"><span class="regolarizzazioni"><span class="regolarizzazioni">A.</span></span><span class="regolarizzate" style="display:none;"><b>Autore</b></span></a></span> stesso si sobbarcasse a questa fatica,
+                              <br>certo non grave e indubbiamente assai utile; e l’opera ne
+                              <br>avrebbe guadagnato non poco.
+                              
+                              
+                              Si capisce bene che passate
+                              <span class="popup" id="popup_note4">Il pronome 'si' è impiegato con funzione impersonale<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note4">[35]</a>
+                              
+                              <br>l’occasione e l’impressione che hanno fatto prendere la
+                              <br>penna, i giudizi a poco a poco possono modificarsi, e per
+                              <br>nuovi particolari mutarsi le notizie degli avvenimenti. 
+                                                     
+                              
+                              
+                              
+                              
+                              È pro­-
+                              <br>babile, ad esempio, che, se vi fosse tornato sopra, <span class="literary_usage">il</span> <span class="persone"><a href="https://www.treccani.it/enciclopedia/achille-mauri_(Dizionario-Biografico)/">Mauri</a></span>
+                              <br>non avrebbe lasciato correre nella biografia <span class="literary_usage">del</span> <span class="persone"><a href="">Farini</a></span>, che
+                              <br>all’impresa delle <span class="Luoghi_countries"><span class="Luoghi_n">Marche</span></span> e dell’<span class="Luoghi_countries"><span class="Luoghi_n">Umbria</span></span>, <span class="persone"><a href="https://www.treccani.it/enciclopedia/napoleone-iii_(Enciclopedia-dei-ragazzi)/">Napoleone III</a></span> non
+                              <span class="popup" id="popup_note26">L’impresa fa riferimento al tentativo di annessione delle Marche e dell’Umbria al
+                                 Regno unito d’Italia, in construzione<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note26">[38]</a>
+                              <br>fu consenziente, quando tutti ormai sanno il contrario, e
+                              <br>chi scrive udì la cosa dalla bocca stessa <span class="literary_usage">del</span> <span class="persone"><a href="">Farini</a></span>, sola con­-
+                              <br>dizione o raccomandazione imperiale essendo il far presto
+                              <br>e con forza.
+                              
+                              
+                              </span></p>
+                     </div>
+                     <div class="left-column">
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo4_brano3">
+                              
+                              <br>Anche la ricorrenza troppo frequente di certe forme di
+                              <br>stile potevasi togliere, se altri che l’<span class="epithet_rolenames"><a href="https://www.treccani.it/enciclopedia/achille-mauri_(Dizionario-Biografico)/"><span class="regolarizzazioni"><span class="regolarizzazioni">A.</span></span><span class="regolarizzate" style="display:none;"><b>Autore</b></span></a></span> non fosse stato edi­-
+                              <br>tore. 
+                                  
+                              
+                              Non piacerà a molti la parola <i>trasordini</i> per <i>disordini</i>,
+                              <br>spesso ripetuta, e che se è di lingua, non è <span class="sic">nè</span> <span class="correzioni" style="display:none;"><b>né</b></span> bella <span class="sic">nè</span> <span class="correzioni" style="display:none;"><b>né</b></span> viva:
+                              <br><span class="sic">nè</span> <span class="correzioni" style="display:none;"><b>né</b></span> piacerà quel frequente modo adoperato <span class="literary_usage">dal</span> <span class="persone"><a href="https://www.treccani.it/enciclopedia/achille-mauri_(Dizionario-Biografico)/">Mauri</a></span>
+                              <br>del <i>rizzarsi in uomo politico</i>. 
+                              <span class="popup" id="popup_note27">Espressione: rizzare. Spiegazione: qui usato col significato di alzare | elevare |
+                                 diventare<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note27">[39]</a>
+                              
+                              
+                              Ma su ciò non vogliamo indugiare:
+                              <br><span class="regolarizzazioni"><span class="sic">chè</span> <span class="correzioni" style="display:none;"><b>ché</b></span></span><span class="regolarizzate" style="display:none;"><b>perché</b></span> in generale la lingua <span class="literary_usage">del</span> <span class="persone"><a href="https://www.treccani.it/enciclopedia/achille-mauri_(Dizionario-Biografico)/">Mauri</a></span> è di ottima lega, e di
+                              <br>buono impasto lo stile, sebbene forse un po’troppo uniforme.
+                              
+                              
+                              <br>Non però mancano pagine eloquenti, e tali da assicurargli
+                              <br>un luogo onorevole fra gli scrittori dell’età nostra. 
+                              
+                              
+                              Ma, per
+                              <br>tornare al difetto cui accennammo, più spiacciono <span class="sic">ad</span> <span class="correzioni" style="display:none;"><b>a</b></span> una
+                              <br>continuata lettura, certe forme troppo simili di narrazione
+                              <br>biografica.
+                              
+                              
+                              Certamente queste Biografie più sono volte a
+                              <br>ritrarre l’uomo interiore che non gli avvenimenti esterni:
+                              <br>offrono più il giudizio sull’uomo e sul suo valore morale,
+                              <br>che non abbondino di particolari aneddotici.
+                              
+                              
+                              Ma quel dire
+                              <br>così sovente, e quasi per formula, che il tale <i>andò lieto,</i>
+                              <br><i>esultò, gioì, si rallegrò</i> delle fortune <span class="Luoghi_countries">italiche</span>, o per contrario
+                              <br><i>si dolse, si conturbò, si afflisse</i> e simili per le sventure, senza
+                              <br>maggiormente particolareggiare, se non era difetto appari­-
+                              <br>scente quando le Biografie venivano a luce alla spicciolata,
+                              <span class="popup" id="popup_note28">Espressione: alla spicciolata. Spiegazione: a un gruppo di pochi<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note28">[40]</a>
+                              <br>ora che sono insieme raccolte dà <span class="sic">ad</span> <span class="correzioni" style="display:none;"><b>a</b></span> esse un colore troppo
+                              <br>generico e troppo uniforme: <span class="sic">nè</span> <span class="correzioni" style="display:none;"><b>né</b></span> avremmo desiderato che l’<span class="epithet_rolenames"><a href="https://www.treccani.it/enciclopedia/achille-mauri_(Dizionario-Biografico)/"><span class="regolarizzazioni"><span class="regolarizzazioni">A.</span></span><span class="regolarizzate" style="display:none;"><b>Autore</b></span></a></span>
+                              <br>stesso modificasse queste forme consimili per mero avvedi­-
+                              <br>mento letterario e di stile, ma <span class="sic">perchè</span> <span class="correzioni" style="display:none;"><b>perché</b></span> entrando meglio e
+                              <br>più addentro nel pensiero e nell’animo di ciascuno dei suoi
+                              <br>elogiati, ne avrebbe meglio scolpita l’immagine, e l’una
+                              <br>fatta meglio diversa dall’altra.
+                                            
+                              </span></p>
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo5_brano3">
+                              
+                              <br>Ma se i particolari non sono sempre abbondanti e re­-
+                              <br>conditi, le notizie sono generalmente sicure.
+                              
+                              
+                              Due soli e pic­-
+                              <br>coli errori di fatto ci venne dato di rilevare: l’uno a <span class="regolarizzazioni"><span class="regolarizzazioni">pag.</span></span><span class="regolarizzate" style="display:none;"><b>pagina</b></span> 198
+                              <br>del 1° volume dove si confondono insieme <span class="persone"><a href="">Giuseppe Torelli</a></span>
+                              <br>(<span class="epithet_rolenames">Ciro d’Arco</span>) e <span class="persone"><a href="https://www.treccani.it/enciclopedia/luigi-torelli/">Luigi Torelli</a></span>: e l’altro a <span class="regolarizzazioni"><span class="regolarizzazioni">pag.</span></span><span class="regolarizzate" style="display:none;"><b>pagina</b></span> 433 del 2°,
+                              <br>dove <span class="persone"><a href="https://www.treccani.it/enciclopedia/giovanni-ventura_(Dizionario-Biografico)/">Giovanni Ventura</a></span> è detto <span class="persone">Francesco</span>
+                              
+                              </span></p>
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo6_brano3">
+                              
+                              <br>Nonostante queste piccole mende, che la critica ha dritto
+                              <br>di far notare, e che sono tali che veramente non ne scapita
+                              <br>il pregio dell’opera, noi ripetiamo che buon pensiero fu
+                              <br>quello di raccogliere insieme questi sparsi Ricordi biogra-
+                              <br>fici e storici. 
+                              
+                              
+                              Tutti leggeranno con piacere e con utilità le
+                              <br>biografie, fra le altre, <span class="literary_usage">del</span> <span class="persone"><a href="https://www.treccani.it/enciclopedia/giovanni-torti/">Torti</a></span>, <span class="literary_usage">del</span> <span class="persone"><a href="https://www.treccani.it/enciclopedia/ludovico-melzi_(Dizionario-Biografico)/">Melzi</a></span>, <span class="literary_usage">del</span> <span class="persone"><a href="https://www.treccani.it/enciclopedia/luigi-carlo-farini/">Farini</a></span>, dei
+                              <br>due <span class="persone"><a href="">Ambrosoli</a></span>, <span class="literary_usage">del</span> <span class="persone"><a href="">Robecchi</a></span>, <span class="literary_usage">del</span> <span class="persone"><a href="https://www.treccani.it/enciclopedia/des-ambrois-de-nevache-luigi-francesco_(Dizionario-Biografico)/"><span class="sic">Desambrois</span> <span class="correzioni" style="display:none;"><b>Des Ambrois</b></span></a></span>, <span class="literary_usage">del</span> <span class="persone"><a href="https://www.treccani.it/enciclopedia/augustin-theiner_(Dizionario-Biografico)/">Theiner</a></span>,
+                              <br> <span class="literary_usage">del</span> <span class="persone"><a href="https://www.treccani.it/enciclopedia/michelangelo-castelli/">Castelli</a></span>.
+                              
+                              
+                              La generazione passata vi troverà memorie
+                              <br>oneste e gloriose da rinfrescare: la presente, esempi di ope­-
+                              <br>rosità e di patriottismo da imitare.
+                              
+                              </span></p>
+                        <p><span class="zone" id="paragrafo7_brano3">
+                              <br>
+                              <span class="ref_bibl">
+                                 <span class="persone">FilomenoAbate</span>. 
+                                 <i><span class="testo_lingua"><span class="persone"><a href="https://www.treccani.it/enciclopedia/dante-alighieri_(Dizionario-Biografico)/">Dante</a></span> dans les impressions <span class="persone"><a href="https://www.treccani.it/enciclopedia/alphonse-marie-louis-prat-de-lamartine/">de Lamartine</a></span></span>.</i>
+                                 <br>- <span class="Luoghi_settlements">Messina</span>, <span class="org"><span class="regolarizzazioni">tip.</span> <span class="regolarizzate" style="display:none;"><b>tipografia</b></span>Capra</span>, <span class="Date">1878</span>.                              
+                                 </span>
+                              </span></p>
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo8_brano3">
+                              
+                              <br>Non conosciamo il <span class="epithet_rolenames">signor</span> <span class="persone">Filomeno Abate</span>, ma ci pren­-
+                              <br>diamo la libertà di consigliarlo a studiar meglio un’altra
+                              <br>volta i fatti intorno ai quali egli si accinge a scrivere. 
+                              
+                              
+                              <span class="sic">Per­-
+                                 <br>chè</span> <span class="correzioni" style="display:none;"><b>Perché</b></span> <span class="persone"><a href="https://www.treccani.it/enciclopedia/dante-alighieri_(Dizionario-Biografico)/">Dante</a></span> ha fatto dire a <span class="persone"><a href="https://www.treccani.it/enciclopedia/francesca-da-rimini_(Enciclopedia-Dantesca)/">Francesca</a></span> che ella leggeva con
+                              <br><span class="persone"><a href="https://it.wikipedia.org/wiki/Paolo_Malatesta#:~:text=Paolo%20Malatesta%2C%20detto%20il%20Bello,prima%20moglie%20Concordia%20dei%20Pandolfini.">Paolo</a></span> la storia di <span class="personaggi">Lancillotto</span>, non ne viene davvero la con­-
+                              <span class="popup" id="popup_note29">Personaggio inventato per la narrazione<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note29">[41]</a>
+                              <br>seguenza, come dice il <span class="epithet_rolenames">signor</span> <span class="persone">Abate</span>, che <span class="quotes"><span class="testo_lingua">«<span class="persone"><a href="https://www.treccani.it/enciclopedia/francesca-da-rimini_(Enciclopedia-Dantesca)/">Francesca</a></span> <span class="epithet_rolenames">da
+                                       <br><span class="Luoghi_settlements">Rimini</span></span> est un épisode puisé dans le cycle d’<span class="persone"><a href="">Arthur</a></span><span class="sic">.</span>» <span class="correzioni" style="display:none;"><b>.</b></span></span></span>
+                              <span class="popup" id="popup_note30">L’espressione fa riferimento a un gruppo di lavori, centrali per la tradizione letteraria
+                                 medievale, che ruotano attorno alla 
+                                 leggenda di Artù e alle storie sui suoi cavalieri<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note30">[42]</a>
+                              
+                              
+                              Il
+                              <br><span class="epithet_rolenames">signor</span> <span class="persone">Abate</span> legga, se non altro, il commento <span class="literary_usage">del</span> <span class="persone"><a href="https://www.treccani.it/enciclopedia/giovanni-boccaccio/">Boccac­-
+                                    <br>cio</a></span>, e si accorgerà che la sua <span class="testo_lingua"><i>méprise</i></span> è piuttosto colossale.
+                              
+                              
+                              <br>Ma questo benedetto ciclo di<span class="persone"><a href="">Arturo</a></span> esercita un fàscino sin-
+                              
+                              <br>golare sulla mente del <span class="epithet_rolenames"><a href="">professore</a></span> di lingue di <span class="Luoghi_settlements">Messina</span>.
+                              
+                              
+                              
+                              
+                              
+                              Egli
+                              <br>non è contento di vederci dentro <span class="persone">Francesca</span> <span class="epithet_rolenames">da <span class="Luoghi_settlements">Rimini</span></span>; ma
+                              <br>aggiunge che <span class="quotes">«<span class="persone"><a href="https://www.treccani.it/enciclopedia/luigi-pulci/">Pulci</a></span> et <span class="persone"><a href="https://www.treccani.it/enciclopedia/matteo-maria-boiardo/">Boiardo</a></span> puisent leurs fictions dans
+                                 <br>le cycle d’<span class="persone"><a href="">Arthur</a></span>. Le <span class="persone"><a href="">Tasse</a></span> trouva dans le cycle d’<span class="persone"><a href="">Arthur</a></span>
+                                 <span class="popup" id="popup_note30">L’espressione fa riferimento a un gruppo di lavori, centrali per la tradizione letteraria
+                                    medievale, che ruotano attorno alla 
+                                    leggenda di Artù e alle storie sui suoi cavalieri<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note30">[45]</a>
+                                 <br>l’idée première d’<span class="personaggi">Olinde</span> et <span class="personaggi">Sopbronie</span><span class="sic">.</span> »</span> <span class="correzioni" style="display:none;"><b>.</b></span>
+                              <span class="popup" id="popup_note31">
+                                 Olinde et Sopbronie fa riferimento all’episodio conosciuto col titolo di
+                                 
+                                 
+                                 
+                                 
+                                 Olindo e Sofronia
+                                 
+                                 
+                                 
+                                 canto II,
+                                 
+                                 
+                                 pagine 14-53.
+                                 
+                                 
+                                 Dall’opera di 
+                                 Torquato Tasso
+                                 Gerusalemmeliberata
+                                 
+                                 <br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note31">[46]</a>
+                              
+                              
+                              <span class="sic">Nè</span> <span class="correzioni" style="display:none;"><b>Né</b></span> sono queste le
+                              <br>sole scoperte del <span class="epithet_rolenames">signor</span> <span class="persone">Abate</span>.                                                                             
+                              
+                              
+                              Egli sa che <span class="persone"><a href="https://www.treccani.it/enciclopedia/brunetto-latini_(Dizionario-Biografico)/">Brunetto La-
+                                    <br>tini</a></span> scrisse una grammatica francese <span class="quotes">«appelée <span class="ref_bibl">Le livre de
+                                    <br>la bonne parleur</span><span class="sic">,</span> »</span> <span class="correzioni" style="display:none;"><b>,</b></span> fatto di una importanza enorme, che rac­-
+                              <br>comandiamo caldamente all’attenzione dei romanisti.                              
+                              
+                              
+                              
+                              E sa
+                              <br>ancora che <span class="persone"><a href="">Marino Canale</a></span> (sic) fece <span class="quotes">«une traduction de
+                                 <span class="popup" id="popup_note32">È probabile che sic sia impiegato dall’autore o dall’editore del testo
+                                    per segnalare la trasposizione errata, ma esatta in termini di trascrizione, del cognome
+                                    Canale.<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note32">[47]</a>
+                                 <br>l’histoire latine de <span class="Luoghi_settlements">Venise</span> en vieux français<span class="sic">;</span> »<span class="correzioni" style="display:none;"><b>;</b></span></span> e sa (altro
+                              <br>fatto che gioverà molto alla nostra storia letteraria) che il
+                              <br><span class="persone"><a href="https://www.treccani.it/enciclopedia/francesco-petrarca/">Petrarca</a></span> scrisse <span class="quotes">« en langue d’oc un grand nombre de vers
+                                 <br>estimés alors<span class="sic">.</span>» <span class="correzioni" style="display:none;"><b>.</b></span></span>
+                              
+                              
+                              Pare ancora che il <span class="epithet_rolenames">signor</span> <span class="persone">Abate</span> creda scritti
+                              <br>in provenzale i viaggi di <span class="persone"><a href="">Mandeville</a></span>, il che è erroneo. 
+                              
+                              
+                              Tra­-
+                              <br>duce il verso di <span class="persone"><a href="https://www.treccani.it/enciclopedia/dante-alighieri_(Dizionario-Biografico)/">Dante</a></span>     
+                              <br> <span class="quotes">« Versi d’amore e prose di romanzi, »</span>
+                              <br> <span class="quotes">« les écrits d’amour en vers et tous les romans en prose, »</span>
+                              <br>il che non è punto esatto; cita degli scrittori francesi che
+                              <br>non s’intende chi <span class="regolarizzazioni">sieno</span> <span class="regolarizzate" style="display:none;"><b>siano</b></span> <span class="quotes">« <span class="persone">Les Paulin</span>,<span class="persone"> les Guesnard</span>,<span class="persone"> les
+                                    <br> Méons</span>,<span class="persone"> Molan</span>, »</span> <span class="testo_lingua"><span class="regolarizzazioni">etc.</span><span class="regolarizzate" style="display:none;"><b>etcetera</b></span></span> 
+                              
+                              
+                              </span></p>
+                     </div>
+                     <div class="right-column">
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo9_brano3">
+                              
+                              <br>Un più accurato studio delle letterature romanze gio­-
+                              <br>verà molto, come vedesi, all’<span class="epithet_rolenames"><a href=""><span class="regolarizzazioni"><span class="regolarizzazioni">A.</span></span><span class="regolarizzate" style="display:none;"><b>Autore</b></span></a></span> di questo scritto, che nella
+                              <br>parte riguardante <span class="persone"><a href="https://www.treccani.it/enciclopedia/alphonse-marie-louis-prat-de-lamartine/">Lamartine</a></span> non contiene che delle ripe­-
+                              <br>tizioni di cose già note da lungo tempo.
+                              
+                              </span></p>
+                        <p><span class="zone" id="paragrafo10_brano3">      
+                              <span class="ref_bibl">
+                                 
+                                 <br><span class="persone"><a href="https://www.treccani.it/enciclopedia/francois-lenormant_(Enciclopedia-Italiana)/">François Lenormant</a></span>. <span class="testo_lingua"><i>La monnaie dans l’antiquité</i>: leçons
+                                    <br>professées dans la chaire d’archéologie près la Bibliotèque
+                                    <br> nationale en 1875-1877</span>; 
+                                 
+                                 <span class="regolarizzazioni">tom.</span> I et II. 
+                                  — <span class="Luoghi_settlements">Paris</span>, <span class="persone"><span class="regolarizzazioni">A.</span><span class="regolarizzate" style="display:none;"><b>Arthur</b></span>Lévy</span>,
+                                 <br><span class="CasaEd">Maisonneuve et C.</span>, <span class="CasaEd">Rollin et <span class="sic">Feurdent</span><span class="correzioni" style="display:none;"><b> Feuardent</b></span></span>, <span class="Date">1878</span>. 
+                                 </span>              
+                              </span></p>
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo11_brano3">
+                              
+                              <br>Il versatile ingegno del <span class="epithet_rolenames">signor</span> <span class="persone"><a href="https://www.treccani.it/enciclopedia/francois-lenormant_(Enciclopedia-Italiana)/">Lenormant</a></span> ci dà una
+                              <br>prova novella del suo sapere e delle sue attitudini con una
+                              <br>storia della moneta nell’antichità, opera vasta di cui ab­-
+                              <br>biamo dinanzi i due primi volumi. 
+                              
+                                 
+                              Già il titolo dell’opera
+                              <br>annunzia due imprese che il <span class="persone"><a href="https://www.treccani.it/enciclopedia/francois-lenormant_(Enciclopedia-Italiana)/">Lenormant</a></span> può dirsi sia il
+                              <br>primo a tentare. 
+                              
+                              
+                              Un corso pubblico di numismatica è cosa
+                              <br>nuova, ed è facile intenderne la difficoltà per una scienza
+                              <br>che è così arduo ridurre a principii indipendenti da ogni
+                              <br>esperienza personale <span class="sic">ed</span> <span class="correzioni" style="display:none;"><b>e</b></span> in cui la quantità e la varietà dei
+                              <br>fatti è tale che appena par possibile riunirli tutti in un
+                              <br>organismo scientifico.                                     
+                              
+                              
+                              Dopo aver tentato felicemente la prova
+                              <br>nell’insegnamento, ora pone il <span class="persone"><a href="https://www.treccani.it/enciclopedia/francois-lenormant_(Enciclopedia-Italiana)/">Lenormant</a></span> il suo lavoro di­-
+                              <br>nanzi al pubblico ed è egli il primo che in un’opera di
+                              <br>largo piano, non rivolta ai soli specialisti, riassume tutta
+                              <br>questa scienza <span class="sic">qual’è</span> <span class="correzioni" style="display:none;"><b>qual è</b></span> oggi veduta e organizzata dopo i
+                              <br>passi grandissimi che ha fatti da <span class="persone"><a href="https://www.treccani.it/enciclopedia/joseph-hilar-eckhel_(Enciclopedia-Italiana)/">Eckhel</a></span> in poi, estendendo
+                              <br>quanto il <span class="persone"><a href="https://www.treccani.it/enciclopedia/theodor-mommsen/">Mommsen</a></span> fece per la moneta romana <span class="sic">ed</span> <span class="correzioni" style="display:none;"><b>e</b></span> il <span class="persone"><a href="https://www.treccani.it/enciclopedia/christian-august-brandis_(Enciclopedia-Italiana)/">Brandis</a></span>
+                              <br>per la moneta asiatica, a tutta la storia della moneta presso
+                              <br>tutti i popoli dell’antichità, compresa anche la <span class="Luoghi_countries">Cina</span>, la
+                              <br><span class="Luoghi_countries">Corea</span>, il <span class="Luoghi_countries">Giappone</span>.
+                              
+                              
+                              
+                              Dopo un libro di <i>Prolegomeni</i> che rias-
+                              <span class="popup" id="popup_note33">Prolegomeni è utilizzato non nel suo significato lessicale, bensì probabilmente
+                                 in riferimento all’opera omonima di Immanuel Kant<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note33">[48]</a>
+                              <br>sume nozioni di natura più generale, seguono tre libri che
+                              <br>parlano della moneta antica nei tre aspetti distinti dai giu­-
+                              <br>reconsultiromani, secondo cioè la materia, la legge, la forma.             
+                              
+                              
+                              <br>Un quinto libro parla della paleografia monetaria. 
+                               
+                              
+                              Final­-
+                              <br>mente in altri tre libri si parla della moneta per paesi,
+                              <span class="popup" id="popup_note4">Il pronome 'si' è impiegato con funzione impersonale<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note4">[49]</a>
+                              <br>prima dell’orientale e greca, poi della italica e romana e
+                              <br>per ultimo di quella dell’estremo oriente. 
+                              
+                              
+                              Il programma di
+                              <br>questi otto libri è dato dall’<span class="epithet_rolenames"><a href="https://www.treccani.it/enciclopedia/francois-lenormant_(Enciclopedia-Italiana)/"><span class="regolarizzazioni"><span class="regolarizzazioni">A.</span></span><span class="regolarizzate" style="display:none;"><b>Autore</b></span></a></span> in principio dell’opera della
+                              <br>quale i due volumi venuti a luce non contengono che tre libri.                   
+                              
+                              
+                              </span></p>
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo12_brano3">
+                              
+                              <br>La numismatica è quello fra i vari rami dello studio
+                              <br>dell’antichità che fin qui era più esclusivamente coltivato
+                              <br>dai soli specialisti. 
+                              
+                              
+                              Molti uomini dotti, quasi tutti quelli
+                              <br>che non sono numismatici di professione, sono più versati
+                              <br>in qualunque altra disciplina che in questa.
+                              
+                               Eppure l’im­-
+                              <br>portanza di questo studio per le indagini storiche e per la
+                              <br>conoscenza dei popoli antichi sotto più d’un rapporto è
+                              <br>evidente.
+                              
+                              
+                              E dunque quasi superfluo il dire che l’opera del
+                              
+                              <br><span class="persone"><a href="https://www.treccani.it/enciclopedia/francois-lenormant_(Enciclopedia-Italiana)/">Lenormant</a></span> giunge opportuna e desiderata, come quella che
+                              <br>avrà per effetto di stringer meglio il legame di questa con le
+                              <br>altre discipline, rendendola, con un libro di facile uso, ac­-
+                              <br>cessibile a tutti nel suo complesso organico e nella entità
+                              <br>dei fatti risultanti da lunghe e minute indagini dall’<span class="epithet_rolenames"><a href="https://www.treccani.it/enciclopedia/francois-lenormant_(Enciclopedia-Italiana)/"><span class="regolarizzazioni"><span class="regolarizzazioni">A.</span></span><span class="regolarizzate" style="display:none;"><b>Autore</b></span></a></span> stesso
+                              <br>e di altri. 
+                                                                     
+                              
+                              
+                              
+                              Anche gli uomini meno amanti degli studi
+                              <br>classici e archeologici, vogliam dire gli economisti, si gio­-
+                              <br>veranno di questo libro che pone a portata loro la cono­-
+                              <br>scenza di fatti notevoli e di dati d’antica esperienza in
+                              <br>una materia così fondamentale pei loro studi.
+                              
+                              
+                              L’<span class="epithet_rolenames"><a href="https://www.treccani.it/enciclopedia/francois-lenormant_(Enciclopedia-Italiana)/"><span class="regolarizzazioni"><span class="regolarizzazioni">A.</span></span><span class="regolarizzate" style="display:none;"><b>Autore</b></span></a></span> è uomo
+                              <br>noto e <span class="regolarizzazioni">niuno</span> <span class="regolarizzate" style="display:none;"><b>nessuno</b></span> potrà negare la sua competenza così per quelle
+                              <br>parti ch’egli ha potuto trattare per fatto d’indagine pro­-
+                              <br>pria, come per quelle nelle quali ha dovuto limitarsi a rias­-
+                              <br>sumere il lavoro altrui. 
+                              
+                              
+                              Tutto quanto è discutibile è discusso
+                              <br> da lui, e ciò anima la sua opera e ne accresce il valore
+                              <br> scientifico. 
+                              
+                              
+                              In critiche minute non potremmo entrare in
+                              <br>questo luogo, tanto speciale essendo l’argomento. 
+                              
+                              
+                              In ge­-
+                              <br>nerale però possiam dire che il libro pecca per eccesso,
+                              <br>come altri del <span class="persone"><a href="https://www.treccani.it/enciclopedia/francois-lenormant_(Enciclopedia-Italiana)/">Lenormant</a></span>. 
+                              
+                              
+                              <span class="regolarizzazioni">Lungi</span> <span class="regolarizzate" style="display:none;"><b>Lontano</b></span> dal limitarsi a quanto
+                              <br>più necessariamente imponeva il soggetto egli sembra <span class="regolarizzazioni">siasi</span> <span class="regolarizzate" style="display:none;"><b>si sia</b></span>
+                              <br>studiato di aumentarne le proporzioni. 
+                              <span class="popup" id="popup_note34">Espressione: siasi studiato di. Spiegazione: si sia impegnato | sforzato di<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note34">[52]</a>
+                              
+                              
+                              Dell’ultimo libro,
+                              <br>che non può avere alcun rapporto organico col resto, si
+                              <span class="popup" id="popup_note4">Il pronome 'si' è impiegato con funzione impersonale<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note4">[53]</a>
+                              <br>poteva fare a meno.
+                              
+                              
+                              Il concetto complesso e storicamente
+                              <br>uno che risponda alla parola <i>antichità</i> non include affatto i
+                              <br>popoli dell’estremo oriente dei quali si poteva parlare in   
+                              <span class="popup" id="popup_note4">Il pronome 'si' è impiegato con funzione impersonale<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note4">[54]</a>                                      
+                              
+                              
+                              <br>una storia generale della moneta, non però in un’opera con-­
+                              <br>sacrata alla moneta nell’<i>antichità</i>.
+                              
+                              
+                              Il quinto libro anche ci
+                              <br>sembra eccessivo, almeno secondo il programma che ne
+                              <br>vien dato.
+                              
+                              
+                              Sotto il titolo di paleografia numismatica sembra
+                              <br>che l’<span class="epithet_rolenames"><a href="https://www.treccani.it/enciclopedia/francois-lenormant_(Enciclopedia-Italiana)/"><span class="regolarizzazioni"><span class="regolarizzazioni">A.</span></span><span class="regolarizzate" style="display:none;"><b>Autore</b></span></a></span> voglia rifare una gran parte della storia della
+                              <br>scrittura e di una moltitudine di alfabeti, mentre in realtà
+                              <br>poteva limitarsi alle speciali notizie paleografiche (non sono
+                              <br>poi tante) utili esclusivamente per la numismatica e non os­-
+                              <br>servabili nell’epigrafia, o nella paleografia antica più gene­-
+                              <br>rale.
+                              
+                              
+                              Ma intendiamo la predilezione dell’<span class="epithet_rolenames"><a href="https://www.treccani.it/enciclopedia/francois-lenormant_(Enciclopedia-Italiana)/"><span class="regolarizzazioni"><span class="regolarizzazioni">A.</span></span><span class="regolarizzate" style="display:none;"><b>Autore</b></span></a></span> per un tema
+                              <br>sul quale ha già scritto un’opera meritamente stimata.
+                              
+                              
+                              <br>Notizie storiche su questi studi di numismatica, contiene
+                              <br>la prefazione, notizie bibliografiche danno le note; e in
+                              <br>queste parti l’<span class="epithet_rolenames"><a href="https://www.treccani.it/enciclopedia/francois-lenormant_(Enciclopedia-Italiana)/"><span class="regolarizzazioni"><span class="regolarizzazioni">A.</span></span><span class="regolarizzate" style="display:none;"><b>Autore</b></span></a></span> è stato forse più sobrio del dovere.
+                              
+                              
+                              Ve-
+                              <br>diamo non senza sgomento che nel programma non si parla 
+                              <span class="popup" id="popup_note4">Il pronome 'si' è impiegato con funzione impersonale<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note4">[55]</a>
+                              <br>di un indice generale.                                   
+                              
+                              
+                              </span></p>
+                     </div>
+                     <div class="left-column"></div>
+                  </div>
+               </for-each>
+            </div>
+            <div id="img_terzoarticolo" class="image"><img class="small" src="parassitismo_letterario__bibl1.png" usemap="#pagina64"><map name="pagina64"><area id="tit_secondobrano" coords="72,1309,556,1341" style="cursor: pointer" shape="rect"><area id="paragrafo1_brano2" coords="72,1342,554,1487" style="cursor: pointer" shape="rect"><area id="paragrafo2_brano2" coords="558,97,1046,239" style="cursor: pointer" shape="rect"><area id="paragrafo3_brano2" coords="561,241,1051,549" style="cursor: pointer" shape="rect"><area id="paragrafo4_brano2" coords="562,552,1051,798" style="cursor: pointer" shape="rect"><area id="tit_bibl1" coords="561,807,1045,841" style="cursor: pointer" shape="rect"><area id="subtit_bibl1" coords="563,843,1045,867" style="cursor: pointer" shape="rect"><area id="paragrafo1_brano3" coords="564,869,1056,908" style="cursor: pointer" shape="rect"><area id="paragrafo2_brano3" coords="566,911,1056,1233" style="cursor: pointer" shape="rect"><area id="paragrafo3_brano3" coords="566,1238,1056,1485" style="cursor: pointer" shape="rect"></map><img class="small" src="bibl1_letteratura_e_storia.png" usemap="#pagina65"><map name="pagina65"><area id="paragrafo3_brano3" coords="48,88,567,316" style="cursor: pointer" shape="rect"><area id="paragrafo4_brano3" coords="48,319,566,933" style="cursor: pointer" shape="rect"><area id="paragrafo5_brano3" coords="49,937,568,1061" style="cursor: pointer" shape="rect"><area id="paragrafo6_brano3" coords="50,1064,566,1286" style="cursor: pointer" shape="rect"><area id="paragrafo7_brano3" coords="50,1288,567,1348" style="cursor: pointer" shape="rect"><area id="paragrafo8_brano3" coords="50,1351,566,1578" style="cursor: pointer" shape="rect"><area id="paragrafo8_brano3" coords="577,90,1089,568" style="cursor: pointer" shape="rect"><area id="paragrafo9_brano3" coords="577,572,1089,660" style="cursor: pointer" shape="rect"><area id="paragrafo10_brano3" coords="577,663,1088,756" style="cursor: pointer" shape="rect"><area id="paragrafo11_brano3" coords="579,760,1089,1393" style="cursor: pointer" shape="rect"><area id="paragrafo12_brano3" coords="576,1398,1091,1577" style="cursor: pointer" shape="rect"></map><img class="small" src="bibl1_letteratura_e_storia2.png" usemap="#pagina66"><map name="pagina66"><area id="paragrafo12_brano3" coords="61,98,560,959" style="cursor: pointer" shape="rect"></map></div>
+         </div>
+         <div id="all_quartoarticolo" class="all">
+            <div id="libri_per_fanciulli" class="text">
+               <h2>
+                  LIBRI PEI FANCIULLI.
+                  </h2>
+               <for-each select="tei:body/tei:div[@type='page']">
+                  <div class="column-pair">
+                     <div class="left-column">
+                        <p><span class="zone" id="paragrafo1_brano4">
+                              <span class="ref_bibl">
+                                 <br><span class="regolarizzazioni">A.</span> DI <span class="persone"><span class="regolarizzazioni">L.</span>MODIGLIANI</span>.
+                                 <i>La curiosità appagata</i>. —
+                                 <span class="Luoghi_settlements">Firenze</span>,
+                                 <span class="org">
+                                    <span class="epithet_rolenames"><span class="regolarizzazioni">tip</span> <span class="regolarizzate" style="display:none;"><b>tipografia</b></span></span>
+                                    <br>Cooperativa
+                                    </span>
+                                 <span class="Date">1878</span>
+                                 </span>                              
+                              </span></p>
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo2_brano4">
+                              
+                              <br>Pare che con questo <span class="regolarizzazioni">libriccino</span> l’<span class="epithet_rolenames"><span class="regolarizzazioni"><span class="regolarizzazioni">A.</span></span><span class="regolarizzate" style="display:none;"><b>Autore</b></span></span> voglia venire in aiuto
+                              <br>dei genitori imbarazzati nel rispondere alle domande che i
+                              <br>fanciulli sogliono muovere intorno ai fenomeni naturali: e
+                              <br>d’altro canto dal <span class="regolarizzazioni">tuono</span> <span class="regolarizzate" style="display:none;"><b>tono</b></span> che assume, pare ch’egli intenda
+                              <br>imbandire un’amena lettura ai piccini piuttosto che ai
+                              <br>grandi. 
+                              
+                              
+                              Ma non raggiunge <span class="sic">nè</span> <span class="correzioni" style="display:none;"><b>né</b></span> l’uno <span class="sic">nè</span> <span class="correzioni" style="display:none;"><b>né</b></span> l’altro scopo.
+                                                  
+                              </span></p>
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo3_brano4">
+                              
+                              <br>Come libro di lettura è di gran lunga inferiore a quelli
+                              <br>che già abbiamo.
+                              
+                              </span></p>
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo4_brano4">
+                              
+                              <br>Come raccolta di nozioni scientifiche è cosa tanto povera
+                              <br>e sbagliata, che confina coll’ironia. 
+                              
+                              
+                              Il sole (<span class="regolarizzazioni">p.</span> <span class="regolarizzate" style="display:none;"><b>pagina</b></span> 7) è formato
+                              <br><span class="quotes">«di vapori che stanno serrati gli uni contro gli altri<span class="sic">;</span>»</span> <span class="correzioni" style="display:none;"><b>;</b></span>
+                              <br> e dopo (<span class="regolarizzazioni">p.</span> <span class="regolarizzate" style="display:none;"><b>pagina</b></span> 23) <span class="quotes">«il vapore è quel fumo bianco che manda
+                                 <br>fuori una pentola quando bolle<span class="sic">;</span>»</span> <span class="correzioni" style="display:none;"><b>;</b></span> e <span class="regolarizzazioni">p.</span> <span class="regolarizzate" style="display:none;"><b>pagina</b></span> 25 la brina è costi­-
+                              <br>tuita da pallottoline bianche di ghiaccio; a <span class="regolarizzazioni">p.</span> <span class="regolarizzate" style="display:none;"><b>pagina</b></span> 40 è spiegata
+                              <br>la formazione dei fiocchi di neve dicendo che i <i>fili</i> di pioggia
+                              <br> spinti dal vento, si raccolgono, s’accavalcano, s’intrecciano.
+                              
+                              </span></p>
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo5_brano4">
+                              
+                              <br>L’<span class="epithet_rolenames"><span class="regolarizzazioni"><span class="regolarizzazioni">A.</span></span><span class="regolarizzate" style="display:none;"><b>Autore</b></span></span> visita gli <span class="Luoghi_n">Appennini</span> per diletto e per farvi degli
+                              <br>studi e giunto in vetta del <span class="Luoghi_n">Corno alle Scale</span>, si trova avere
+                              <br>fra le mani un barometro (<span class="regolarizzazioni">p.</span> <span class="regolarizzate" style="display:none;"><b>pagina</b></span> 47) contenente molto mer­-
+                              <br>curio (<span class="regolarizzazioni">p.</span> <span class="regolarizzate" style="display:none;"><b>pagina</b></span> 48) e con la sua lancetta che stava sullo zero,
+                              <br>ossia non marcava più nulla, in riva al mare. 
+                              
+                              
+                              Questo <span class="regolarizzazioni">ma-
+                                 <br>raviglioso</span> <span class="regolarizzate" style="display:none;"><b>meraviglioso</b></span> <span class="regolarizzazioni">istrumento</span> <span class="regolarizzate" style="display:none;"><b>strumento</b></span> predice il tempo benissimo, <span class="sic">perchè</span> <span class="correzioni" style="display:none;"><b>perché</b></span>
+                              <br>(<span class="regolarizzazioni">p.</span> <span class="regolarizzate" style="display:none;"><b>pagina</b></span> 49) i vapori o nubi, per quanto si ammassino a grandi
+                              <br>altezze, pure ci <i>tagliano</i> sempre l’aria e ce la convertono
+                              <br>in grossa e <i>pesante</i>. 
+                              
+                              
+                              I liquidi preferiti pei termometri (<span class="regolarizzazioni">p.</span> <span class="regolarizzate" style="display:none;"><b>pagina</b></span> 5)
+                              <br>sono l’alcool e il mercurio, <span class="sic">perchè</span> <span class="correzioni" style="display:none;"><b>perché</b></span> salgono e discendono con
+                              <br>più facilità degli altri.
+                              
+                              
+                              L’elettricità è un gas (<span class="regolarizzazioni">p.</span> <span class="regolarizzate" style="display:none;"><b>pagina</b></span> 52) <span class="sic">ed</span> <span class="correzioni" style="display:none;"><b>e</b></span> il 
+                              <br>fulmine non è altro che elettricità infiammata.                                  
+                              
+                              
+                              </span></p>
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo6_brano4">
+                              
+                              <br><span class="quotes">«Com’è che il cannocchiale <span class="regolarizzazioni">ravvicina</span>? Tutta la forza
+                                 <br>sta in due sole lenti una delle quali ingrandisce l’altra im­-
+                                 <br>piccolisce perfettamente tanto quanto ha ingrandito la
+                                 <br>prima... Ecco l’unica e sola spiegazione del DIFFICILE E 
+                                 <br>COMPLICATO <span class="regolarizzazioni">istrumento</span> <span class="regolarizzate" style="display:none;"><b>strumento</b></span><span class="sic">.</span> <span class="sic">«</span> <span class="correzioni" style="display:none;"><b>»</b></span></span><span class="correzioni" style="display:none;"><b>.</b></span>
+                               (Lo stampatello è nel testo). <span class="popup" id="popup_note35">Nota dell’editore<br> (Responsabile: Giorgia Migliorini)</span><a href="#" class="popup-trigger" id="note35">[56]</a>
+                              
+                              </span></p>
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo7_brano4">
+                              <span class="quotes">
+                                 
+                                 <br>«Ma scusi, questo Cielo benedetto che cosa è? —
+                                 
+                                 
+                                 Uno
+                                 <br>sterminato spazio senza limiti e dove non c’è nulla. —;
+                                 
+                                 
+                                 <br>E le stelle, la luna, il sole, come si reggono? —
+                                 
+                                 
+                                 Nel modo stesso
+                                 <br>che ci reggiamo noi affidati sempre al Grande Creatore<span class="sic">.</span>».
+                                 
+                                 </span>
+                              </span></p>
+                        <p class="first-line-indent-justify"><span class="zone" id="paragrafo8_brano4">
+                              
+                              <br>Ci pare che basti e n’avanzi.
+                              
+                              
+                              E non ci saremmo nem­-
+                              <br>meno occupati di questo lavoruccio, se non fosse stato lo­-
+                              <br>dato dalla stampa quotidiana. 
+                              
+                              
+                              </span></p>
+                     </div>
+                  </div>
+               </for-each>
+            </div>
+            <div id="img_quartoarticolo" class="image"><img class="small" src="bibl2_libri_pei_fanciulli__notizie.png" usemap="#pagina68"><map name="pagina68"><area id="subtit_bibl2" coords="77,254,580,279" style="cursor: pointer" shape="rect"><area id="paragrafo1_brano4" coords="77,283,579,319" style="cursor: pointer" shape="rect"><area id="paragrafo2_brano4" coords="78,321,581,442" style="cursor: pointer" shape="rect"><area id="paragrafo3_brano4" coords="78,446,580,484" style="cursor: pointer" shape="rect"><area id="paragrafo4_brano4" coords="78,486,581,651" style="cursor: pointer" shape="rect"><area id="paragrafo5_brano4" coords="78,654,579,899" style="cursor: pointer" shape="rect"><area id="paragrafo6_brano4" coords="77,901,580,1004" style="cursor: pointer" shape="rect"><area id="paragrafo7_brano4" coords="78,1006,579,1084" style="cursor: pointer" shape="rect"><area id="paragrafo8_brano4" coords="77,1087,581,1152" style="cursor: pointer" shape="rect"></map></div>
+         </div>
+      </div>
+      <div id="all_notizie">
+         <div class="all">
+            <div id="Notizie" class="text">
+               <h2>
+                  
+                  NOTIZIE.
+                  </h2>
+               <for-each select="tei:body/tei:div[@type='page']">
+                  <div class="column-pair">
+                     <div class="left-column">
+                        <p><span class="zone" id="primauscita">
+                              
+                              <br>—L’<span class="epithet_rolenames"><span class="regolarizzazioni">avv.</span> <span class="regolarizzate" style="display:none;"><b>avvocato</b></span></span> <span class="persone">Zanino Volta</span>, discendente dell’illustre <span class="epithet_rolenames"><a href="https://www.treccani.it/enciclopedia/alessandro-volta/">fisico</a></span>, sta per pub­-
+                              <br>blicare un suo studio intitolato: <i>Alessandro Volta a Parigi</i>. 
+                              
+                              </span></p>
+                     </div>
+                     <div class="left-column">
+                        <p><span class="zone" id="secondauscita">
+                              
+                              <br>—È morta il <span class="Date">16 luglio</span> a <span class="Luoghi_settlements">Messina</span> la <span class="epithet_rolenames">signora</span> <span class="persone">Laura La Racine</span>, nata
+                              <br><span class="persone">Gonzenbacli</span>.
+                              
+                              
+                              Essa raccolse e tradusse in tedesco varie novelle popolari
+                              <br>siciliane che furono pubblicate nel <span class="Date">1870</span>, in <span class="Luoghi_countries">Germania</span>, in due volumi, con
+                              <br>una introduzione di <span class="persone"><span class="regolarizzazioni">O.</span> Hartwig</span>. 
+                                                          
+                              </span></p>
+                     </div>
+                  </div>
+               </for-each>
+            </div>
+            <div id="img_notizie" class="image"><img class="small" src="bibl2_libri_pei_fanciulli__notizie.png" usemap="#pagina68_1"><map name="pagina68_1"><area id="tit_not" coords="287,1169,391,1195" style="cursor: pointer" shape="rect"><area id="primauscita" coords="112,1201,572,1242" style="cursor: pointer" shape="rect"><area id="secondauscita" coords="96,1251,571,1330" style="cursor: pointer" shape="rect"></map></div>
+         </div>
+      </div>
+   </body>
+</html>
